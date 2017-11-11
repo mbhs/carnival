@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block head %}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'core/style.css' %}">
+{% endblock %}
+
+{% block body %}
+    <div id="navbar"></div>
+
+    {% block content %}
+    {% endblock %}
+{% endblock %}
