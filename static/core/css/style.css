@@ -1,0 +1,113 @@
+/* GLOBAL */
+body {
+    background:url('../img/background/memphis-colorful.png');
+    background-attachment:fixed;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: transparent;
+    -moz-transition: background-color 1s ease-out;
+    -webkit-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+}
+.navbar a {
+    text-transform: uppercase;
+}
+.navbar .active {
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+.navbar:hover .active {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.navbar:hover .navbar-brand img {
+    animation: icon-change 0.5s forwards;
+}
+.navbar:hover a, .navbar:hover .navbar-brand{
+    animation: changetext 0.5s forwards;
+}
+.navbar:hover {
+    background-color:  #9e2438;
+}
+
+.fill a{
+    position: relative;
+}
+.fill a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '';
+    color: transparent;
+    background: #fff;
+    height: 1px;
+}
+.fill a {
+    transition: all 1s;
+}
+.fill a::after {
+  text-align: left;
+  content: '';
+  margin: 0;
+  opacity: 0;
+}
+.fill a:hover {
+  color: #fff;
+  z-index: 1;
+  animation: changetexthover 1s forwards 1s;
+}
+.fill a:hover::after {
+  z-index: -1;
+  animation: fill 0.5s forwards;
+  -webkit-animation: fill 0.5s forwards;
+  -moz-animation: fill 0.5s forwards;
+  opacity: 1;
+}
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+}
+@-webkit-keyframes changetext {
+    100% {
+        color: white;
+    }
+}
+@-webkit-keyframes changetexthover {
+    100% {
+        color: green;
+    }
+}
+@-webkit-keyframes icon-change {
+    100% {
+        content: url('../img/icon/icon-1.svg');
+    }
+}
+/* INDEX */
+.hero-wrapper {
+    position: absolute;
+    display: table;
+    width:99%;
+    min-height: 100%;
+    height:100%;
+    text-align: center;
+}
+.hero-inner {
+    display: table-cell;
+    vertical-align: middle;
+}

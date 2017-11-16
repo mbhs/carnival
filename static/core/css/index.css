@@ -1,0 +1,24 @@
+section {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh; }
+
+section h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  white-space: nowrap; }
+
+#section02 {
+  background: url("../img/background/orchestra.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-weight: 900; }
+
+/*# sourceMappingURL=index.css.map */
