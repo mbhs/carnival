@@ -1,5 +1,3 @@
-
-
 section {
     position: relative;
     width: 100vw;
@@ -7,21 +5,66 @@ section {
     height: 100vh;
 }
 
-section h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 2;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  white-space: nowrap;
+#hero-section {
+    .hero-inner {
+        position: absolute;
+        width: 65%;
+        height: 50%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .jumbotron {
+            text-align: center;
+            width: 100%;
+            height: 100%;
+
+            .btn {
+                position: absolute;
+                bottom: 1.5em;
+                left: 50%;
+                transform: translate(-50%);
+            }
+        }
+    }
 }
 
-#section02 {
-    background: url('../img/background/orchestra.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    font-weight: 900;
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 576px) {
+    #hero-section {
+        blockquote {display: none;}
+        h1 {font-size: 40px;}
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    #hero-section {
+        blockquote {display: none;}
+        h1 {font-size: 60px;}
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    #hero-section {
+        blockquote {display: none;}
+        h1 {font-size: 70px;}
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    #hero-section {
+        blockquote {display: block; font-size: 1.2em;}
+        h1 {font-size: 80px;}
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    #hero-section {
+        blockquote {display: block; font-size: 1.5em;}
+        h1 {font-size: 80px;}
+    }
 }

@@ -5,7 +5,7 @@ body {
 
 /* NAVBAR */
 .navbar {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.6);
   transition: background-color 0.5s ease-out; }
   .navbar a {
     text-transform: uppercase;
@@ -64,23 +64,50 @@ section {
   max-width: 100%;
   height: 100vh; }
 
-section h1 {
+#hero-section .hero-inner {
   position: absolute;
-  top: 50%;
+  width: 65%;
+  height: 50%;
+  top: 40%;
   left: 50%;
-  z-index: 2;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  white-space: nowrap; }
+  transform: translate(-50%, -50%); }
+  #hero-section .hero-inner .jumbotron {
+    text-align: center;
+    width: 100%;
+    height: 100%; }
+    #hero-section .hero-inner .jumbotron .btn {
+      position: absolute;
+      bottom: 1.5em;
+      left: 50%;
+      transform: translate(-50%); }
 
-#section02 {
-  background: url("../img/background/orchestra.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  font-weight: 900; }
-
+@media (max-width: 576px) {
+  #hero-section blockquote {
+    display: none; }
+  #hero-section h1 {
+    font-size: 40px; } }
+@media (min-width: 576px) {
+  #hero-section blockquote {
+    display: none; }
+  #hero-section h1 {
+    font-size: 60px; } }
+@media (min-width: 768px) {
+  #hero-section blockquote {
+    display: none; }
+  #hero-section h1 {
+    font-size: 70px; } }
+@media (min-width: 992px) {
+  #hero-section blockquote {
+    display: block;
+    font-size: 1.2em; }
+  #hero-section h1 {
+    font-size: 80px; } }
+@media (min-width: 1200px) {
+  #hero-section blockquote {
+    display: block;
+    font-size: 1.5em; }
+  #hero-section h1 {
+    font-size: 80px; } }
 /* KEYFRAMES */
 @-webkit-keyframes fill {
   0% {
