@@ -1,98 +1,41 @@
 {% extends "core/base.html" %}
 {% load static %}
 {% block content %}
-<section id="hero-section">
-    <div class="hero-inner">
-        <div class="jumbotron">
-            <p class="lead">Montgomery Blair High School Presents:</p>
-            <h1>Carnival of the Animals</h1>
-            <p class="lead">January 6, 2018 | 10AM - 1PM</p>
-            <hr>
-            <blockquote class="blockquote">
-                Welcome to the Carnival of Animals. More description text here... Maybe change font size, etc., based on content.
-            </blockquote>
-            <p><a class="btn btn-lg btn-success px-4 py-2" href="#" role="button">Buy Tickets Now</a></p>
-        </div>
-    </div>
+<section id="cover-container">
+    <main role="main" class="cover">
+        <h1 class="cover-lead">MBHS Music Presents:</h1>
+        <h1 class="cover-title">Carnival of the Animals</h1>
+        <a href="#about-container"><span></span></a>
+    </main>
 </section>
-<section id="schedule-section">
-    <div class="schedule-inner">
-        <h1 class="section-head">Schedule /</h1>
-        <div class="row">
-            <div class="col-lg-6">
-                <h1 class="time-header">10:00 AM</h1>
-                <p class="time-description">
-                    Festival opens. Ongoing Festivities: Instrument Petting Zoo, Face Painting, Bake Sale, etc.
-                </p>
-            </div>
-            <div class="col-lg-6">
-                <h1 class="time-header">11:30 AM</h1>
-                <p class="time-description">
-                    Marching Band/Drumline Performance
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <h1 class="time-header">10:15 AM</h1>
-                <p class="time-description">
-                    Marching Band/Drumline Performance
-                </p>
-            </div>
-            <div class="col-lg-6">
-                <h1 class="time-header">12:00 AM</h1>
-                <p class="time-description">
-                    Carnival of the Animals Perfomance 2
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <h1 class="time-header">10:45 AM</h1>
-                <p class="time-description">
-                    Carnival of the Animals Performance 1
-                </p>
-            </div>
-            <div class="col-lg-6">
-                <h1 class="time-header">12:30 AM</h1>
-                <p class="time-description">
-                    Second round of raffle called
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <h1 class="time-header">11:15 AM</h1>
-                <p class="time-description">
-                    Raffle winners called/Orchestra Break
-                </p>
-            </div>
-            <div class="col-lg-6">
-                <h1 class="time-header">12:45 AM</h1>
-                <p class="time-description">
-                    Instrument petting zoo closes
-                </p>
-            </div>
-        </div>
-        <h1 class="time-header">01:00 PM</h1>
-        <p class="time-description">
-            Closing
+<section id="about-container">
+    <main role="main" class="about">
+        <h1 class="about-lead">About /</h1>
+        <h1 class="about-title">This what we all about, dawg.</h1>
+        <p class="">
+            Fixed or “sticky” navigation bars are a prevalent trend in some of the most
+            shockingly beautiful sites across the web. These benignly set bars allow for ease
+            of access to a website’s core functionalities, regardless of where a user may be
+            in the midst of a page’s content. Yet there are more than a few critics of the
+            fixed bar model. The most common complaints include words like: “unnecessary”
+            and “distracting” pitched about in regular intervals.
         </p>
-    </div>
+        <a href="#schedule-container"><span></span></a>
+    </main>
 </section>
-<section id="about-section">
-    <h1 class="display-2">About</h1>
+<section id="schedule-container">
+    <main role="main" class="schedule">
+        <h1 class="schedule-lead">Schedule /</h1>
+        <h1 class="schedule-title">Fam, what we gon' do?</h1>
+        <div class="row">
+            <div class="col-sm-6">
+                
+            </div>
+        </div>
+        <a href="#about-container"><span></span></a>
+    </main>
 </section>
-<section id="map-section">"
-    <h1 class="display-2">Map Section</h1>
-</section>
-
-<script>
-    var height = document.getElementsByClassName('navbar')[0].clientHeight;
-    document.getElementById('hero-section').style.marginTop = height + 'px';
-    window.onresize = function() {
-        var height = document.getElementsByClassName('navbar')[0].clientHeight;
-        document.getElementById('hero-section').style.marginTop = height + 'px';
-    }
-</script>
 {% endblock %}
+
+<!--LOGO SOURCE: logomakr.com/08sZUw
+logomakr.com/2b1CHR-->

@@ -1,136 +1,290 @@
-/* GLOBAL */
-body {
-  background: url("../img/background/memphis-colorful.png");
-  background-attachment: fixed; }
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy|Open+Sans");
+html {
+  font-size: 1rem; }
 
-/* NAVBAR */
+@media (min-width: 576px) {
+  html {
+    font-size: calc(16px + (24 - 16) * (100vw - 576px)/(768- 576)); } }
+@media (min-width: 768px) {
+  html {
+    font-size: calc(16px + (24 - 16) * (100vw - 768px)/(992- 768)); } }
+@media (min-width: 992px) {
+  html {
+    font-size: calc(16px + (24 - 16) * (100vw - 992px)/(1920 - 992)); } }
 .navbar {
-  background: rgba(255, 255, 255, 0.6);
-  transition: background-color 0.5s ease-out; }
-  .navbar a {
+  background: rgba(158, 36, 56, 0);
+  transition: all 0.5s;
+  padding-top: 0; }
+  .navbar .navbar-nav {
+    font-size: 0.75em;
     text-transform: uppercase;
-    position: absolute;
-    overflow: hidden; }
-  .navbar .active {
-    border-top: 2px solid transparent;
-    border-bottom: 2px solid transparent; }
+    font-weight: 450; }
+    .navbar .navbar-nav .nav-item {
+      margin-top: 0; }
+      .navbar .navbar-nav .nav-item .nav-link {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        transition: all 0.25s;
+        border-top: 5px solid transparent;
+        color: white !important;
+        padding-bottom: 10px; }
+      .navbar .navbar-nav .nav-item .active {
+        transition: all 0.25s;
+        border-top: 5px solid white;
+        color: white !important; }
   .navbar:hover {
-    background-color: #9e2438;
-    background: filter-gradient(#9e2438, #f16f5c, vertical);
-    background: background-image(linear-gradient(top, #9e2438 0%, rgba(241, 111, 92, 0.42) 100%)); }
-    .navbar:hover a, .navbar:hover .navbar-brand {
-      opacity: 1;
-      -webkit-animation: changetext 0.5s forwards;
-      -moz-animation: changetext 0.5s forwards;
-      -ms-animation: changetext 0.5s forwards;
-      animation: changetext 0.5s forwards; }
-    .navbar:hover .navbar-brand img {
-      -webkit-animation: icon-change 0.5s forwards;
-      -moz-animation: icon-change 0.5s forwards;
-      -ms-animation: icon-change 0.5s forwards;
-      animation: icon-change 0.5s forwards; }
-  .navbar .fill a {
-    position: relative;
-    transition: all 0.5s; }
-    .navbar .fill a::after {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 0%;
-      content: '';
-      color: transparent;
-      text-align: left;
-      margin: 0;
-      opacity: 0; }
-    .navbar .fill a:hover {
-      -webkit-animation: changetexthover 2s forwards;
-      -moz-animation: changetexthover 2s forwards;
-      -ms-animation: changetexthover 2s forwards;
-      animation: changetexthover 2s forwards;
-      z-index: 1; }
-  .navbar .fill a:hover::after {
-    z-index: -1;
-    opacity: 1;
-    -webkit-animation: fill 0.5s forwards;
-    -moz-animation: fill 0.5s forwards;
-    -ms-animation: fill 0.5s forwards;
-    animation: fill 0.5s forwards; }
+    background: #9e2438; }
+    .navbar:hover .nav-link {
+      padding-top: 3em; }
+  @media (min-width: 992px) {
+    .navbar .nav-item:hover .nav-link {
+      border-top: 5px solid white; } }
 
-/* INDEX */
 section {
-  position: relative; }
-
-.section-head {
-  margin-top: 4em;
-  font-size: 1em;
-  font-weight: normal;
-  letter-spacing: 0.5em;
-  margin-bottom: 2em; }
-
-#hero-section {
+  position: relative;
   width: 100vw;
-  max-width: 100%;
-  height: 75vh;
-  background-color: #ffe346; }
-  #hero-section .hero-inner {
+  max-width: 100%; }
+
+#cover-container {
+  height: 100vh;
+  color: white;
+  background-color: #141516; }
+  #cover-container .cover {
     position: absolute;
-    width: 75%;
-    height: 75%;
-    top: 0;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%); }
-    #hero-section .hero-inner .jumbotron {
-      text-align: center;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(227, 73, 70, 0.4); }
-
-#schedule-section {
-  width: 100vw;
-  max-width: 100%;
-  height: 80vh;
-  background-color: #46e3ff; }
-  #schedule-section .schedule-inner {
-    background-color: #5fba7d;
-    width: 75%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 1px;
-    position: relative;
-    text-align: center;
-    color: white;
-    text-transform: uppercase; }
-    #schedule-section .schedule-inner .time-description {
-      display: inline-block;
-      width: 75%;
-      margin-bottom: 2em; }
-
-@media screen and (max-width: 680px) {
-  #hero-section .hero-inner .jumbotron blockquote {
-    display: none; } }
-/* KEYFRAMES */
-@-webkit-keyframes fill {
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    #cover-container .cover .cover-lead {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.5em; }
+    #cover-container .cover .cover-title {
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 3em; }
+    #cover-container .cover a span {
+      position: absolute;
+      bottom: -15;
+      left: 50%;
+      width: 46px;
+      height: 46px;
+      margin-left: -23px;
+      border: 1px solid #fff;
+      border-radius: 100%;
+      box-sizing: border-box; }
+    #cover-container .cover a span::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: '';
+      width: 16px;
+      height: 16px;
+      margin: -12px 0 0 -8px;
+      border-left: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      transform: rotate(-45deg);
+      box-sizing: border-box; }
+    #cover-container .cover a span::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      content: '';
+      width: 44px;
+      height: 44px;
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+      border-radius: 100%;
+      opacity: 0;
+      -webkit-animation: sdb03 3s infinite;
+      -moz-animation: sdb03 3s infinite;
+      -ms-animation: sdb03 3s infinite;
+      -o-animation: sdb03 3s infinite;
+      animation: sdb03 3s infinite;
+      box-sizing: border-box; }
+@-webkit-keyframes sdb03 {
   0% {
-    width: 0%;
-    height: 1px; }
-  50% {
-    width: 100%;
-    height: 1px; }
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  60% {
+    box-shadow: 0 0 0 60px rbga(255, 255, 255, 0.1);
+    opacity: 0; }
   100% {
-    width: 100%;
-    height: 100%;
-    background: #fff; } }
-@-webkit-keyframes changetext {
-  100% {
-    color: white; } }
-@-webkit-keyframes changetexthover {
+    opacity: 0; } }
+@-moz-keyframes sdb03 {
   0% {
-    color: white; }
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  60% {
+    box-shadow: 0 0 0 60px rbga(255, 255, 255, 0.1);
+    opacity: 0; }
   100% {
-    color: black; } }
-@-webkit-keyframes icon-change {
+    opacity: 0; } }
+@-ms-keyframes sdb03 {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  60% {
+    box-shadow: 0 0 0 60px rbga(255, 255, 255, 0.1);
+    opacity: 0; }
   100% {
-    content: url("../img/icon/icon-1.svg"); } }
+    opacity: 0; } }
+@-o-keyframes sdb03 {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  60% {
+    box-shadow: 0 0 0 60px rbga(255, 255, 255, 0.1);
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@keyframes sdb03 {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  60% {
+    box-shadow: 0 0 0 60px rbga(255, 255, 255, 0.1);
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+#about-container {
+  height: 100vh;
+  min-height: 100% !important;
+  color: black;
+  background-color: white; }
+  #about-container .about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    #about-container .about .about-lead {
+      font-family: 'Open Sans', sans-serif;
+      font-size: .9em; }
+    #about-container .about .about-title {
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 1.5em; }
+    @media (min-width: 576px) {
+      #about-container .about .about-lead {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.25em; }
+      #about-container .about .about-title {
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 1.75em; } }
+    @media (min-width: 768px) {
+      #about-container .about .about-lead {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5em; }
+      #about-container .about .about-title {
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 2em; } }
+    #about-container .about a span {
+      position: absolute;
+      bottom: -15;
+      left: 50%;
+      width: 46px;
+      height: 46px;
+      margin-left: -23px;
+      border: 1px solid #000;
+      border-radius: 100%;
+      box-sizing: border-box; }
+    #about-container .about a span::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: '';
+      width: 16px;
+      height: 16px;
+      margin: -12px 0 0 -8px;
+      border-left: 1px solid #000;
+      border-bottom: 1px solid #000;
+      transform: rotate(-45deg);
+      box-sizing: border-box; }
+    #about-container .about a span::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      content: '';
+      width: 44px;
+      height: 44px;
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+      border-radius: 100%;
+      opacity: 0;
+      -webkit-animation: sdb03 3s infinite;
+      -moz-animation: sdb03 3s infinite;
+      -ms-animation: sdb03 3s infinite;
+      -o-animation: sdb03 3s infinite;
+      animation: sdb03 3s infinite;
+      box-sizing: border-box; }
+@-webkit-keyframes sdb03 {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  60% {
+    box-shadow: 0 0 0 60px rbga(255, 255, 255, 0.1);
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@-moz-keyframes sdb03 {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  60% {
+    box-shadow: 0 0 0 60px rbga(255, 255, 255, 0.1);
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@-ms-keyframes sdb03 {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  60% {
+    box-shadow: 0 0 0 60px rbga(255, 255, 255, 0.1);
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@-o-keyframes sdb03 {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  60% {
+    box-shadow: 0 0 0 60px rbga(255, 255, 255, 0.1);
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@keyframes sdb03 {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  60% {
+    box-shadow: 0 0 0 60px rbga(255, 255, 255, 0.1);
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+#schedule-container {
+  height: 100vh;
+  color: white;
+  background-color: black; }
+  #schedule-container .schedule {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    #schedule-container .schedule .schedule-lead {
+      font-family: 'Open Sans', sans-serif;
+      font-size: .9em; }
+    #schedule-container .schedule .schedule-title {
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 1.5em; }
 
 /*# sourceMappingURL=custom.css.map */

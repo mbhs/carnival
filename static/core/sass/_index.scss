@@ -1,0 +1,154 @@
+@mixin section-height($height) {
+    height: $height;
+}
+@mixin section-button($color, $animation-color-rgba) {
+    a span {
+      position: absolute;
+      bottom: -15;
+      left: 50%;
+      width: 46px;
+      height: 46px;
+      margin-left: -23px;
+      border: 1px solid $color;
+      border-radius: 100%;
+      box-sizing: border-box;
+    }
+    a span::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: '';
+      width: 16px;
+      height: 16px;
+      margin: -12px 0 0 -8px;
+      border-left: 1px solid $color;
+      border-bottom: 1px solid $color;
+      transform: rotate(-45deg);
+      box-sizing: border-box;
+    }
+    a span::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      content: '';
+      width: 44px;
+      height: 44px;
+      box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+      border-radius: 100%;
+      opacity: 0;
+      @include animation('sdb03 3s infinite');
+      box-sizing: border-box;
+    }
+    @include keyframes(sdb03) {
+        0% {
+            opacity: 0;
+          }
+          30% {
+            opacity: 1;
+          }
+          60% {
+            box-shadow: 0 0 0 60px $animation-color-rgba;
+            opacity: 0;
+          }
+          100% {
+            opacity: 0;
+          }
+    }
+}
+section {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+}
+
+#cover-container {
+    @include section-height(100vh);
+    color: white;
+    background-color: rgb(20,21,22);
+    .cover {
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+
+        .cover-lead {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.5em;
+        }
+        .cover-title {
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 3em;
+        }
+        @include section-button(#fff, rbga(255,255,255,0.1));
+    }
+}
+
+#about-container {
+    @include section-height(100vh);
+    min-height: 100% !important;
+    color: black;
+    background-color: rgb(255,255,255);
+    .about {
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+
+        .about-lead {
+            font-family: 'Open Sans', sans-serif;
+            font-size: .9em;
+        }
+        .about-title {
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 1.5em;
+        }
+
+        @include media-breakpoint-sm() {
+            .about-lead {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.25em;
+            }
+            .about-title {
+                font-family: 'Luckiest Guy', cursive;
+                font-size: 1.75em;
+            }
+        }
+        @include media-breakpoint-md() {
+            .about-lead {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.5em;
+            }
+            .about-title {
+                font-family: 'Luckiest Guy', cursive;
+                font-size: 2em;
+            }
+        }
+        @include section-button(#000, rbga(255,255,255,0.1));
+    }
+}
+
+#schedule-container {
+    @include section-height(100vh);
+    color: white;
+    background-color: rgb(0,0,0);
+
+    .schedule {
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+
+        .schedule-lead {
+            font-family: 'Open Sans', sans-serif;
+            font-size: .9em;
+        }
+        .schedule-title {
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 1.5em;
+        }
+    }
+}
