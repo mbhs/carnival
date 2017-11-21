@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy|Open+Sans');
+
+html {
+    font-size: 1rem;
+}
+
+@mixin media-breakpoint-sm {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+@mixin media-breakpoint-md {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+@mixin media-breakpoint-lg {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@include media-breakpoint-sm {
+    html {
+        font-size: calc(16px + (24 - 16) * (100vw - 576px)/(768- 576));
+    }
+}
+@include media-breakpoint-md {
+    html {
+        font-size: calc(16px + (24 - 16) * (100vw - 768px)/(992- 768));
+    }
+}
+@include media-breakpoint-lg {
+    html {
+        font-size: calc(16px + (24 - 16) * (100vw - 992px)/(1920 - 992));
+    }
+}
+
+//NAVBAR
+@import '_navbar';
+
+//INDEX
+@import '_index';
