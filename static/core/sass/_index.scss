@@ -2,43 +2,42 @@
     height: $height;
 }
 @mixin section-button($color, $animation-color-rgba) {
-    a span {
-      position: absolute;
-      bottom: -15;
-      left: 50%;
+    a span{
+      position: relative;
       width: 46px;
       height: 46px;
-      margin-left: -23px;
+      display: inline-block;
       border: 1px solid $color;
       border-radius: 100%;
       box-sizing: border-box;
     }
     a span::after {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      content: '';
-      width: 16px;
-      height: 16px;
-      margin: -12px 0 0 -8px;
-      border-left: 1px solid $color;
-      border-bottom: 1px solid $color;
-      transform: rotate(-45deg);
-      box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        content: '';
+        width: 16px;
+        height: 16px;
+        margin: -12px 0 0 -8px;
+        border-left: 1px solid $color;
+        border-bottom: 1px solid $color;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        box-sizing: border-box;
     }
     a span::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      content: '';
-      width: 44px;
-      height: 44px;
-      box-shadow: 0 0 0 0 rgba(255,255,255,.1);
-      border-radius: 100%;
-      opacity: 0;
-      @include animation('sdb03 3s infinite');
-      box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        content: '';
+        width: 44px;
+        height: 44px;
+        box-shadow: 0 0 0 0 $animation-color-rgba;
+        border-radius: 100%;
+        opacity: 0;
+        @include animation(sdb03 3s infinite);
+        box-sizing: border-box;
     }
     @include keyframes(sdb03) {
         0% {
@@ -48,7 +47,7 @@
             opacity: 1;
           }
           60% {
-            box-shadow: 0 0 0 60px $animation-color-rgba;
+            box-shadow: 10px 10px 10px 60px $animation-color-rgba;
             opacity: 0;
           }
           100% {
@@ -81,20 +80,23 @@ section {
             font-family: 'Luckiest Guy', cursive;
             font-size: 3em;
         }
-        @include section-button(#fff, rbga(255,255,255,0.1));
+        @include section-button(#fff, rbga(255,0,0,0.1));
     }
 }
 
 #about-container {
-    @include section-height(100vh);
-    min-height: 100% !important;
+    @include section-height(auto);
+    position: static;
+    min-height: 100vh !important;
     color: black;
     background-color: rgb(255,255,255);
     .about {
-        position: absolute;
-        top:50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        height: 1%;
+        width: 50%;
+        padding-top: 3em;
         text-align: center;
 
         .about-lead {
@@ -131,15 +133,19 @@ section {
 }
 
 #schedule-container {
-    @include section-height(100vh);
+    @include section-height(auto);
+    position: static;
+    min-height: 100vh !important;
     color: white;
     background-color: rgb(0,0,0);
 
     .schedule {
-        position: absolute;
-        top:50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        height: 1%;
+        width: 50%;
+        padding-top: 3em;
         text-align: center;
 
         .schedule-lead {
@@ -149,6 +155,41 @@ section {
         .schedule-title {
             font-family: 'Luckiest Guy', cursive;
             font-size: 1.5em;
+            margin-bottom: 1em;
         }
+        @include media-breakpoint-sm() {
+            .schedule-lead {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.25em;
+            }
+            .schedule-title {
+                font-family: 'Luckiest Guy', cursive;
+                font-size: 1.75em;
+            }
+        }
+        @include media-breakpoint-md() {
+            .schedule-lead {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.5em;
+            }
+            .schedule-title {
+                font-family: 'Luckiest Guy', cursive;
+                font-size: 2em;
+            }
+        }
+        .time-header {
+            font-size: 1.25em;
+        }
+
+        .time-description {
+            display:inline-block;
+            width: 75%;
+            font-size: 0.80em;
+            margin-bottom: 2em;
+        }
+        #closing {
+            width: 100% !important;
+        }
+        @include section-button(#fff, rbga(255,255,255,0.1));
     }
 }
