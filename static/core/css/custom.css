@@ -62,12 +62,10 @@ section {
       font-family: 'Luckiest Guy', cursive;
       font-size: 3em; }
     #cover-container .cover a span {
-      position: absolute;
-      bottom: -15;
-      left: 50%;
+      position: relative;
       width: 46px;
       height: 46px;
-      margin-left: -23px;
+      display: inline-block;
       border: 1px solid #fff;
       border-radius: 100%;
       box-sizing: border-box; }
@@ -81,6 +79,7 @@ section {
       margin: -12px 0 0 -8px;
       border-left: 1px solid #fff;
       border-bottom: 1px solid #fff;
+      -webkit-transform: rotate(-45deg);
       transform: rotate(-45deg);
       box-sizing: border-box; }
     #cover-container .cover a span::before {
@@ -91,7 +90,7 @@ section {
       content: '';
       width: 44px;
       height: 44px;
-      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 0 0 rbga(255, 0, 0, 0.1);
       border-radius: 100%;
       opacity: 0;
       -webkit-animation: sdb03 3s infinite;
@@ -106,7 +105,7 @@ section {
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 0 0 0 60px rbga(255, 255, 255, 0.1);
+    box-shadow: 10px 10px 10px 60px rbga(255, 0, 0, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -116,7 +115,7 @@ section {
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 0 0 0 60px rbga(255, 255, 255, 0.1);
+    box-shadow: 10px 10px 10px 60px rbga(255, 0, 0, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -126,7 +125,7 @@ section {
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 0 0 0 60px rbga(255, 255, 255, 0.1);
+    box-shadow: 10px 10px 10px 60px rbga(255, 0, 0, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -136,7 +135,7 @@ section {
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 0 0 0 60px rbga(255, 255, 255, 0.1);
+    box-shadow: 10px 10px 10px 60px rbga(255, 0, 0, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -146,20 +145,23 @@ section {
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 0 0 0 60px rbga(255, 255, 255, 0.1);
+    box-shadow: 10px 10px 10px 60px rbga(255, 0, 0, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
 #about-container {
-  height: 100vh;
-  min-height: 100% !important;
+  height: auto;
+  position: static;
+  min-height: 100vh !important;
   color: black;
   background-color: white; }
   #about-container .about {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 1%;
+    width: 50%;
+    padding-top: 3em;
     text-align: center; }
     #about-container .about .about-lead {
       font-family: 'Open Sans', sans-serif;
@@ -182,12 +184,10 @@ section {
         font-family: 'Luckiest Guy', cursive;
         font-size: 2em; } }
     #about-container .about a span {
-      position: absolute;
-      bottom: -15;
-      left: 50%;
+      position: relative;
       width: 46px;
       height: 46px;
-      margin-left: -23px;
+      display: inline-block;
       border: 1px solid #000;
       border-radius: 100%;
       box-sizing: border-box; }
@@ -201,6 +201,7 @@ section {
       margin: -12px 0 0 -8px;
       border-left: 1px solid #000;
       border-bottom: 1px solid #000;
+      -webkit-transform: rotate(-45deg);
       transform: rotate(-45deg);
       box-sizing: border-box; }
     #about-container .about a span::before {
@@ -211,7 +212,7 @@ section {
       content: '';
       width: 44px;
       height: 44px;
-      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 0 0 rbga(255, 255, 255, 0.1);
       border-radius: 100%;
       opacity: 0;
       -webkit-animation: sdb03 3s infinite;
@@ -226,7 +227,7 @@ section {
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 0 0 0 60px rbga(255, 255, 255, 0.1);
+    box-shadow: 10px 10px 10px 60px rbga(255, 255, 255, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -236,7 +237,7 @@ section {
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 0 0 0 60px rbga(255, 255, 255, 0.1);
+    box-shadow: 10px 10px 10px 60px rbga(255, 255, 255, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -246,7 +247,7 @@ section {
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 0 0 0 60px rbga(255, 255, 255, 0.1);
+    box-shadow: 10px 10px 10px 60px rbga(255, 255, 255, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -256,7 +257,7 @@ section {
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 0 0 0 60px rbga(255, 255, 255, 0.1);
+    box-shadow: 10px 10px 10px 60px rbga(255, 255, 255, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -266,25 +267,141 @@ section {
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 0 0 0 60px rbga(255, 255, 255, 0.1);
+    box-shadow: 10px 10px 10px 60px rbga(255, 255, 255, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
 #schedule-container {
-  height: 100vh;
+  height: auto;
+  position: static;
+  min-height: 100vh !important;
   color: white;
   background-color: black; }
   #schedule-container .schedule {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 1%;
+    width: 50%;
+    padding-top: 3em;
     text-align: center; }
     #schedule-container .schedule .schedule-lead {
       font-family: 'Open Sans', sans-serif;
       font-size: .9em; }
     #schedule-container .schedule .schedule-title {
       font-family: 'Luckiest Guy', cursive;
-      font-size: 1.5em; }
+      font-size: 1.5em;
+      margin-bottom: 1em; }
+    @media (min-width: 576px) {
+      #schedule-container .schedule .schedule-lead {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.25em; }
+      #schedule-container .schedule .schedule-title {
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 1.75em; } }
+    @media (min-width: 768px) {
+      #schedule-container .schedule .schedule-lead {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5em; }
+      #schedule-container .schedule .schedule-title {
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 2em; } }
+    #schedule-container .schedule .time-header {
+      font-size: 1.25em; }
+    #schedule-container .schedule .time-description {
+      display: inline-block;
+      width: 75%;
+      font-size: 0.80em;
+      margin-bottom: 2em; }
+    #schedule-container .schedule #closing {
+      width: 100% !important; }
+    #schedule-container .schedule a span {
+      position: relative;
+      width: 46px;
+      height: 46px;
+      display: inline-block;
+      border: 1px solid #fff;
+      border-radius: 100%;
+      box-sizing: border-box; }
+    #schedule-container .schedule a span::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: '';
+      width: 16px;
+      height: 16px;
+      margin: -12px 0 0 -8px;
+      border-left: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      box-sizing: border-box; }
+    #schedule-container .schedule a span::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      content: '';
+      width: 44px;
+      height: 44px;
+      box-shadow: 0 0 0 0 rbga(255, 255, 255, 0.1);
+      border-radius: 100%;
+      opacity: 0;
+      -webkit-animation: sdb03 3s infinite;
+      -moz-animation: sdb03 3s infinite;
+      -ms-animation: sdb03 3s infinite;
+      -o-animation: sdb03 3s infinite;
+      animation: sdb03 3s infinite;
+      box-sizing: border-box; }
+@-webkit-keyframes sdb03 {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  60% {
+    box-shadow: 10px 10px 10px 60px rbga(255, 255, 255, 0.1);
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@-moz-keyframes sdb03 {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  60% {
+    box-shadow: 10px 10px 10px 60px rbga(255, 255, 255, 0.1);
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@-ms-keyframes sdb03 {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  60% {
+    box-shadow: 10px 10px 10px 60px rbga(255, 255, 255, 0.1);
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@-o-keyframes sdb03 {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  60% {
+    box-shadow: 10px 10px 10px 60px rbga(255, 255, 255, 0.1);
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@keyframes sdb03 {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  60% {
+    box-shadow: 10px 10px 10px 60px rbga(255, 255, 255, 0.1);
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
 
 /*# sourceMappingURL=custom.css.map */

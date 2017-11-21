@@ -1,1 +1,5 @@
-psycopg2
+Django==1.11.7
+psycopg2==2.7.3.2
+pyaml==17.10.0
+pytz==2017.3
+PyYAML==3.12
