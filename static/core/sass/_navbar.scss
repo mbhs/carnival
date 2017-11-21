@@ -1,0 +1,45 @@
+
+.navbar {
+    background: rgba(158,36,56,0);
+    transition: all 0.5s;
+    padding-top: 0;
+
+    .navbar-nav {
+        font-size: 0.75em;
+        text-transform: uppercase;
+        font-weight: 450;
+
+        .nav-item {
+            margin-top: 0;
+            .nav-link {
+                margin-left: 1.5em;
+                margin-right: 1.5em;
+                transition: all 0.25s;
+                border-top: 5px solid transparent;
+                color: rgb(255,255,255) !important;
+                padding-bottom: 10px;
+            }
+            .active {
+                transition: all 0.25s;
+                border-top: 5px solid white;
+                color: white !important;
+            }
+        }
+    }
+
+    &:hover {
+        background: rgba(158,36,56,1);
+
+        .nav-link {
+            padding-top:3em;
+        }
+    }
+
+    @include media-breakpoint-lg() {
+        .nav-item:hover {
+            .nav-link {
+                border-top: 5px solid white;
+            }
+        }
+    }
+}
