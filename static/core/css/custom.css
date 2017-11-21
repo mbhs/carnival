@@ -275,10 +275,11 @@ section {
   color: white;
   background-color: black; }
   #schedule-container .schedule {
-    position: absolute;
+    position: relative;
+    margin: auto;
+    height: 50%;
+    width: 50%;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center; }
     #schedule-container .schedule .schedule-lead {
       font-family: 'Open Sans', sans-serif;
@@ -286,5 +287,26 @@ section {
     #schedule-container .schedule .schedule-title {
       font-family: 'Luckiest Guy', cursive;
       font-size: 1.5em; }
+    @media (min-width: 576px) {
+      #schedule-container .schedule .schedule-lead {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.25em; }
+      #schedule-container .schedule .schedule-title {
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 1.75em; } }
+    @media (min-width: 768px) {
+      #schedule-container .schedule .schedule-lead {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5em; }
+      #schedule-container .schedule .schedule-title {
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 2em; } }
+    #schedule-container .schedule .time-header {
+      font-size: 1.5em; }
+    #schedule-container .schedule .time-description {
+      display: inline-block;
+      width: 75%;
+      font-size: 1em;
+      margin-bottom: 2em; }
 
 /*# sourceMappingURL=custom.css.map */

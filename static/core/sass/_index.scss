@@ -136,10 +136,11 @@ section {
     background-color: rgb(0,0,0);
 
     .schedule {
-        position: absolute;
-        top:50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        position: relative;
+        margin: auto;
+        height: 50%;
+        width: 50%;
+        top: 50%;
         text-align: center;
 
         .schedule-lead {
@@ -149,6 +150,37 @@ section {
         .schedule-title {
             font-family: 'Luckiest Guy', cursive;
             font-size: 1.5em;
+        }
+        @include media-breakpoint-sm() {
+            .schedule-lead {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.25em;
+            }
+            .schedule-title {
+                font-family: 'Luckiest Guy', cursive;
+                font-size: 1.75em;
+            }
+        }
+        @include media-breakpoint-md() {
+            .schedule-lead {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.5em;
+            }
+            .schedule-title {
+                font-family: 'Luckiest Guy', cursive;
+                font-size: 2em;
+            }
+        }
+        .time-header {
+            font-size: 1.5em;
+        }
+
+        .time-description {
+            display:inline-block;
+            width: 75%;
+            font-size: 1em;
+            //background-color: black;
+            margin-bottom: 2em;
         }
     }
 }
