@@ -10,6 +10,7 @@
       border: 1px solid $color;
       border-radius: 100%;
       box-sizing: border-box;
+      margin: 1em;
     }
     a span::after {
         position: absolute;
@@ -82,6 +83,16 @@ section {
         }
         @include section-button(#fff, rbga(255,0,0,0.1));
     }
+    .animate {
+        visibility: hidden;
+    }
+    @include media-breakpoint-lg() {
+        .animate {
+            position: absolute;
+            right: 0;
+            visibility: visible;
+        }
+    }
 }
 
 #about-container {
@@ -96,7 +107,7 @@ section {
         margin: auto;
         height: 1%;
         width: 50%;
-        padding-top: 3em;
+        padding-top: 5em;
         text-align: center;
 
         .about-lead {
@@ -106,6 +117,11 @@ section {
         .about-title {
             font-family: 'Luckiest Guy', cursive;
             font-size: 1.5em;
+        }
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1em;
         }
 
         @include media-breakpoint-sm() {
@@ -130,20 +146,38 @@ section {
         }
         @include section-button(#000, rbga(255,255,255,0.1));
     }
+    .animate {
+        display: none;
+    }
+    @include media-breakpoint-lg() {
+        background: url("../img/icon/flapping-birds.gif") top left no-repeat;
+        background-size: 20em 10em;
+        .animate {
+            position: absolute;
+            display: inline;
+            visibility: hidden;
+            top: 0;
+            left: 0;
+        }
+    };
 }
 
 #schedule-container {
     @include section-height(auto);
     position: static;
-    min-height: 100vh !important;
+    min-height: 100% !important;
     color: white;
-    background-color: rgb(0,0,0);
+
+    background: url('../img/background/orchestra.jpg') no-repeat;
+    background-size: cover;
+    background-position: fixed;
 
     .schedule {
+        background-color: rgba(158,36,56,0.80);
         display: flex;
         flex-direction: column;
         margin: auto;
-        height: 1%;
+        height: 100vh;
         width: 50%;
         padding-top: 3em;
         text-align: center;
@@ -178,12 +212,14 @@ section {
             }
         }
         .time-header {
+            font-family: 'Luckiest Guy', cursive;
             font-size: 1.25em;
         }
 
         .time-description {
             display:inline-block;
             width: 75%;
+            font-family: 'Open Sans', sans-serif;
             font-size: 0.80em;
             margin-bottom: 2em;
         }
