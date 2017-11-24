@@ -9,16 +9,13 @@
         <p class="lead">
             Saturday, January 6 | 10AM - 1PM
         </p>
-        <a href="#" role="button" class="btn btn-outline-light d-inline-block">Buy Tickets</a>
-        <br>
-        <br>
-        <a href="#about-container"><span></span></a>
+        <a href="#" role="button" class="btn btn-outline-light d-block">Buy Tickets</a>
     </main>
+    <a href="#about-container"><span class="section-btn"></span></a>
     <object class="animate" type="image/svg+xml" data="{% static 'core/img/icon/bird.svg' %}"></object>
 </section>
 <section id="about-container">
     <main role="main" class="about">
-        <img class="animate" src="{% static 'core/img/icon/flapping-birds.gif' %}" alt="flapping-birds">
         <h1 class="about-lead">About /</h1>
         <h1 class="about-title">This what we all about, dawg.</h1>
         <p class="">
@@ -38,9 +35,10 @@
             fixed bar model. The most common complaints include words like: “unnecessary”
             and “distracting” pitched about in regular intervals.
         </p>
-        <a href="about" role="button" class="btn btn-outline-dark">Learn More!</a>
-        <a href="#schedule-container"><span></span></a>
+        <a href="{% url 'about' %}" role="button" class="btn btn-outline-dark mb-2">Learn More!</a>
     </main>
+    <img class="animate" src="{% static 'core/img/icon/flapping-birds.gif' %}" alt="flapping-birds">
+    <a href="#schedule-container"><span class="section-btn"></span></a>
 </section>
 <section id="schedule-container">
     <main role="main" class="schedule">
@@ -106,8 +104,8 @@
         <p class="time-description" id="closing">
             Closing
         </p>
-        <a href="#about-container"><span></span></a>
     </main>
+    <a href="#about-container"><span class="section-btn"></span></a>
 </section>
 {% endblock %}
 

@@ -2,17 +2,19 @@
     height: $height;
 }
 @mixin section-button($color, $animation-color-rgba) {
-    a span{
-      position: relative;
+    & .section-btn {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display:block;
       width: 46px;
       height: 46px;
-      display: inline-block;
       border: 1px solid $color;
       border-radius: 100%;
       box-sizing: border-box;
       margin: 1em;
     }
-    a span::after {
+    & .section-btn::after {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -26,7 +28,7 @@
         transform: rotate(-45deg);
         box-sizing: border-box;
     }
-    a span::before {
+    & .section-btn::before {
         position: absolute;
         top: 0;
         left: 0;
@@ -48,7 +50,7 @@
             opacity: 1;
           }
           60% {
-            box-shadow: 10px 10px 10px 60px $animation-color-rgba;
+            box-shadow: 0px 0px 0px 60px $animation-color-rgba;
             opacity: 0;
           }
           100% {
@@ -62,10 +64,16 @@ section {
     max-width: 100%;
 }
 
+body {
+    background: url('../img/background/memphis-colorful.png');
+    background-attachment: fixed;
+}
+
 #cover-container {
     @include section-height(100vh);
     color: white;
     background-color: rgb(20,21,22);
+    text-align: center;
     .cover {
         position: absolute;
         top:50%;
@@ -81,8 +89,8 @@ section {
             font-family: 'Luckiest Guy', cursive;
             font-size: 3em;
         }
-        @include section-button(#fff, rbga(255,0,0,0.1));
     }
+    @include section-button(#fff, rbga(255,0,0,0.1));
     .animate {
         visibility: hidden;
     }
@@ -97,10 +105,10 @@ section {
 
 #about-container {
     @include section-height(auto);
-    position: static;
+    position: relative;
     min-height: 100vh !important;
     color: black;
-    background-color: rgb(255,255,255);
+
     .about {
         display: flex;
         flex-direction: column;
@@ -144,28 +152,29 @@ section {
                 font-size: 2em;
             }
         }
-        @include section-button(#000, rbga(255,255,255,0.1));
+
     }
+    @include section-button(#000, rbga(255,255,255,0.1));
     .animate {
         display: none;
     }
     @include media-breakpoint-lg() {
-        background: url("../img/icon/flapping-birds.gif") top left no-repeat;
-        background-size: 20em 10em;
         .animate {
             position: absolute;
-            display: inline;
-            visibility: hidden;
             top: 0;
             left: 0;
+            width: 20em;
+            height: 10em;
+            background: url("../img/icon/flapping-birds.gif") top left no-repeat;
+            background-size: 20em 10em;
         }
     };
 }
 
 #schedule-container {
     @include section-height(auto);
-    position: static;
-    min-height: 100% !important;
+    position: relative;
+    min-height: 75% !important;
     color: white;
 
     background: url('../img/background/orchestra.jpg') no-repeat;
@@ -174,10 +183,10 @@ section {
 
     .schedule {
         background-color: rgba(158,36,56,0.80);
-        display: flex;
-        flex-direction: column;
+        //display: flex;
+        //flex-direction: column;
         margin: auto;
-        height: 100vh;
+        height: auto;
         width: 50%;
         padding-top: 3em;
         text-align: center;
@@ -191,6 +200,17 @@ section {
             font-size: 1.5em;
             margin-bottom: 1em;
         }
+        .time-header {
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 1.25em;
+        }
+        .time-description {
+            display:inline-block;
+            width: 75%;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 0.80em;
+            margin-bottom: 2em;
+        }
         @include media-breakpoint-sm() {
             .schedule-lead {
                 font-family: 'Open Sans', sans-serif;
@@ -199,6 +219,17 @@ section {
             .schedule-title {
                 font-family: 'Luckiest Guy', cursive;
                 font-size: 1.75em;
+            }
+            .time-header {
+                font-family: 'Luckiest Guy', cursive;
+                font-size: 1em;
+            }
+            .time-description {
+                display:inline-block;
+                width: 75%;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 0.75em;
+                margin-bottom: 1em;
             }
         }
         @include media-breakpoint-md() {
@@ -211,21 +242,9 @@ section {
                 font-size: 2em;
             }
         }
-        .time-header {
-            font-family: 'Luckiest Guy', cursive;
-            font-size: 1.25em;
-        }
-
-        .time-description {
-            display:inline-block;
-            width: 75%;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 0.80em;
-            margin-bottom: 2em;
-        }
         #closing {
             width: 100% !important;
         }
-        @include section-button(#fff, rbga(255,255,255,0.1));
     }
+    @include section-button(#fff, rbga(255,255,255,0.1));
 }
