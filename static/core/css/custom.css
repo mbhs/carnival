@@ -46,10 +46,15 @@ section {
   width: 100vw;
   max-width: 100%; }
 
+body {
+  background: url("../img/background/memphis-colorful.png");
+  background-attachment: fixed; }
+
 #cover-container {
   height: 100vh;
   color: white;
-  background-color: #141516; }
+  background-color: #141516;
+  text-align: center; }
   #cover-container .cover {
     position: absolute;
     top: 50%;
@@ -62,52 +67,54 @@ section {
     #cover-container .cover .cover-title {
       font-family: 'Luckiest Guy', cursive;
       font-size: 3em; }
-    #cover-container .cover a span {
-      position: relative;
-      width: 46px;
-      height: 46px;
-      display: inline-block;
-      border: 1px solid #fff;
-      border-radius: 100%;
-      box-sizing: border-box;
-      margin: 1em; }
-    #cover-container .cover a span::after {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      content: '';
-      width: 16px;
-      height: 16px;
-      margin: -12px 0 0 -8px;
-      border-left: 1px solid #fff;
-      border-bottom: 1px solid #fff;
-      -webkit-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-      box-sizing: border-box; }
-    #cover-container .cover a span::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      content: '';
-      width: 44px;
-      height: 44px;
-      box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.1);
-      border-radius: 100%;
-      opacity: 0;
-      -webkit-animation: sdb03 3s infinite;
-      -moz-animation: sdb03 3s infinite;
-      -ms-animation: sdb03 3s infinite;
-      -o-animation: sdb03 3s infinite;
-      animation: sdb03 3s infinite;
-      box-sizing: border-box; }
+  #cover-container .section-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 46px;
+    height: 46px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+    margin: 1em; }
+  #cover-container .section-btn::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box; }
+  #cover-container .section-btn::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 0 0 0 rbga(255, 0, 0, 0.1);
+    border-radius: 100%;
+    opacity: 0;
+    -webkit-animation: sdb03 3s infinite;
+    -moz-animation: sdb03 3s infinite;
+    -ms-animation: sdb03 3s infinite;
+    -o-animation: sdb03 3s infinite;
+    animation: sdb03 3s infinite;
+    box-sizing: border-box; }
 @-webkit-keyframes sdb03 {
   0% {
     opacity: 0; }
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 10px 10px 10px 60px rgba(255, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px 60px rbga(255, 0, 0, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -117,7 +124,7 @@ section {
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 10px 10px 10px 60px rgba(255, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px 60px rbga(255, 0, 0, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -127,7 +134,7 @@ section {
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 10px 10px 10px 60px rgba(255, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px 60px rbga(255, 0, 0, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -137,7 +144,7 @@ section {
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 10px 10px 10px 60px rgba(255, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px 60px rbga(255, 0, 0, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -147,7 +154,7 @@ section {
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 10px 10px 10px 60px rgba(255, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px 60px rbga(255, 0, 0, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -161,10 +168,9 @@ section {
 
 #about-container {
   height: auto;
-  position: static;
+  position: relative;
   min-height: 100vh !important;
-  color: black;
-  background-color: white; }
+  color: black; }
   #about-container .about {
     display: flex;
     flex-direction: column;
@@ -196,52 +202,54 @@ section {
       #about-container .about .about-title {
         font-family: 'Luckiest Guy', cursive;
         font-size: 2em; } }
-    #about-container .about a span {
-      position: relative;
-      width: 46px;
-      height: 46px;
-      display: inline-block;
-      border: 1px solid #000;
-      border-radius: 100%;
-      box-sizing: border-box;
-      margin: 1em; }
-    #about-container .about a span::after {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      content: '';
-      width: 16px;
-      height: 16px;
-      margin: -12px 0 0 -8px;
-      border-left: 1px solid #000;
-      border-bottom: 1px solid #000;
-      -webkit-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-      box-sizing: border-box; }
-    #about-container .about a span::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      content: '';
-      width: 44px;
-      height: 44px;
-      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
-      border-radius: 100%;
-      opacity: 0;
-      -webkit-animation: sdb03 3s infinite;
-      -moz-animation: sdb03 3s infinite;
-      -ms-animation: sdb03 3s infinite;
-      -o-animation: sdb03 3s infinite;
-      animation: sdb03 3s infinite;
-      box-sizing: border-box; }
+  #about-container .section-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 46px;
+    height: 46px;
+    border: 1px solid #000;
+    border-radius: 100%;
+    box-sizing: border-box;
+    margin: 1em; }
+  #about-container .section-btn::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box; }
+  #about-container .section-btn::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 0 0 0 rbga(255, 255, 255, 0.1);
+    border-radius: 100%;
+    opacity: 0;
+    -webkit-animation: sdb03 3s infinite;
+    -moz-animation: sdb03 3s infinite;
+    -ms-animation: sdb03 3s infinite;
+    -o-animation: sdb03 3s infinite;
+    animation: sdb03 3s infinite;
+    box-sizing: border-box; }
 @-webkit-keyframes sdb03 {
   0% {
     opacity: 0; }
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 10px 10px 10px 60px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 0px 60px rbga(255, 255, 255, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -251,7 +259,7 @@ section {
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 10px 10px 10px 60px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 0px 60px rbga(255, 255, 255, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -261,7 +269,7 @@ section {
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 10px 10px 10px 60px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 0px 60px rbga(255, 255, 255, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -271,7 +279,7 @@ section {
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 10px 10px 10px 60px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 0px 60px rbga(255, 255, 255, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -281,37 +289,34 @@ section {
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 10px 10px 10px 60px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 0px 60px rbga(255, 255, 255, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
   #about-container .animate {
     display: none; }
   @media (min-width: 992px) {
-    #about-container {
+    #about-container .animate {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20em;
+      height: 10em;
       background: url("../img/icon/flapping-birds.gif") top left no-repeat;
-      background-size: 20em 10em; }
-      #about-container .animate {
-        position: absolute;
-        display: inline;
-        visibility: hidden;
-        top: 0;
-        left: 0; } }
+      background-size: 20em 10em; } }
 
 #schedule-container {
   height: auto;
-  position: static;
-  min-height: 100% !important;
+  position: relative;
+  min-height: 75% !important;
   color: white;
   background: url("../img/background/orchestra.jpg") no-repeat;
   background-size: cover;
   background-position: fixed; }
   #schedule-container .schedule {
     background-color: rgba(158, 36, 56, 0.8);
-    display: flex;
-    flex-direction: column;
     margin: auto;
-    height: 1%;
+    height: auto;
     width: 50%;
     padding-top: 3em;
     text-align: center; }
@@ -322,20 +327,6 @@ section {
       font-family: 'Luckiest Guy', cursive;
       font-size: 1.5em;
       margin-bottom: 1em; }
-    @media (min-width: 576px) {
-      #schedule-container .schedule .schedule-lead {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 1.25em; }
-      #schedule-container .schedule .schedule-title {
-        font-family: 'Luckiest Guy', cursive;
-        font-size: 1.75em; } }
-    @media (min-width: 768px) {
-      #schedule-container .schedule .schedule-lead {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 1.5em; }
-      #schedule-container .schedule .schedule-title {
-        font-family: 'Luckiest Guy', cursive;
-        font-size: 2em; } }
     #schedule-container .schedule .time-header {
       font-family: 'Luckiest Guy', cursive;
       font-size: 1.25em; }
@@ -345,54 +336,79 @@ section {
       font-family: 'Open Sans', sans-serif;
       font-size: 0.80em;
       margin-bottom: 2em; }
+    @media (min-width: 576px) {
+      #schedule-container .schedule .schedule-lead {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.25em; }
+      #schedule-container .schedule .schedule-title {
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 1.75em; }
+      #schedule-container .schedule .time-header {
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 1em; }
+      #schedule-container .schedule .time-description {
+        display: inline-block;
+        width: 75%;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.75em;
+        margin-bottom: 1em; } }
+    @media (min-width: 768px) {
+      #schedule-container .schedule .schedule-lead {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5em; }
+      #schedule-container .schedule .schedule-title {
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 2em; } }
     #schedule-container .schedule #closing {
       width: 100% !important; }
-    #schedule-container .schedule a span {
-      position: relative;
-      width: 46px;
-      height: 46px;
-      display: inline-block;
-      border: 1px solid #fff;
-      border-radius: 100%;
-      box-sizing: border-box;
-      margin: 1em; }
-    #schedule-container .schedule a span::after {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      content: '';
-      width: 16px;
-      height: 16px;
-      margin: -12px 0 0 -8px;
-      border-left: 1px solid #fff;
-      border-bottom: 1px solid #fff;
-      -webkit-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-      box-sizing: border-box; }
-    #schedule-container .schedule a span::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      content: '';
-      width: 44px;
-      height: 44px;
-      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
-      border-radius: 100%;
-      opacity: 0;
-      -webkit-animation: sdb03 3s infinite;
-      -moz-animation: sdb03 3s infinite;
-      -ms-animation: sdb03 3s infinite;
-      -o-animation: sdb03 3s infinite;
-      animation: sdb03 3s infinite;
-      box-sizing: border-box; }
+  #schedule-container .section-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 46px;
+    height: 46px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+    margin: 1em; }
+  #schedule-container .section-btn::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box; }
+  #schedule-container .section-btn::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 0 0 0 rbga(255, 255, 255, 0.1);
+    border-radius: 100%;
+    opacity: 0;
+    -webkit-animation: sdb03 3s infinite;
+    -moz-animation: sdb03 3s infinite;
+    -ms-animation: sdb03 3s infinite;
+    -o-animation: sdb03 3s infinite;
+    animation: sdb03 3s infinite;
+    box-sizing: border-box; }
 @-webkit-keyframes sdb03 {
   0% {
     opacity: 0; }
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 10px 10px 10px 60px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 0px 60px rbga(255, 255, 255, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -402,7 +418,7 @@ section {
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 10px 10px 10px 60px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 0px 60px rbga(255, 255, 255, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -412,7 +428,7 @@ section {
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 10px 10px 10px 60px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 0px 60px rbga(255, 255, 255, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -422,7 +438,7 @@ section {
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 10px 10px 10px 60px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 0px 60px rbga(255, 255, 255, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -432,7 +448,7 @@ section {
   30% {
     opacity: 1; }
   60% {
-    box-shadow: 10px 10px 10px 60px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 0px 60px rbga(255, 255, 255, 0.1);
     opacity: 0; }
   100% {
     opacity: 0; } }
