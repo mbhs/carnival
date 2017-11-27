@@ -9,104 +9,17 @@
         <p class="lead">
             Saturday, January 6 | 10AM - 1PM
         </p>
-        <a href="#" role="button" class="btn btn-outline-light d-block">Buy Tickets</a>
+        <a href="#" role="button" class="btn btn-outline-light d-block">Presale Tickets $5</a>
     </main>
     <a href="#about-container"><span class="section-btn"></span></a>
-    <object class="animate" type="image/svg+xml" data="{% static 'core/img/icon/bird.svg' %}"></object>
+    <img src="{% static 'core/img/icon/bird.svg' %}" class="animate" alt="bird.svg">
 </section>
-<section id="about-container">
-    <main role="main" class="about">
-        <h1 class="about-lead">About /</h1>
-        <h1 class="about-title">This what we all about, dawg.</h1>
-        <p class="">
-            Fixed or “sticky” navigation bars are a prevalent trend in some of the most
-            shockingly beautiful sites across the web. These benignly set bars allow for ease
-            of access to a website’s core functionalities, regardless of where a user may be
-            in the midst of a page’s content. Yet there are more than a few critics of the
-            fixed bar model. The most common complaints include words like: “unnecessary”
-            and “distracting” pitched about in regular intervals.
-        </p>
-        <h1 class="about-title">Inspiring the youth since 1776</h1>
-        <p class="">
-            Fixed or “sticky” navigation bars are a prevalent trend in some of the most
-            shockingly beautiful sites across the web. These benignly set bars allow for ease
-            of access to a website’s core functionalities, regardless of where a user may be
-            in the midst of a page’s content. Yet there are more than a few critics of the
-            fixed bar model. The most common complaints include words like: “unnecessary”
-            and “distracting” pitched about in regular intervals.
-        </p>
-        <a href="{% url 'about' %}" role="button" class="btn btn-outline-dark mb-2">Learn More!</a>
-    </main>
-    <img class="animate" src="{% static 'core/img/icon/flapping-birds.gif' %}" alt="flapping-birds">
-    <a href="#schedule-container"><span class="section-btn"></span></a>
-</section>
-<section id="schedule-container">
-    <main role="main" class="schedule">
-        <h1 class="schedule-lead">Schedule /</h1>
-        <h1 class="schedule-title">Fam, what we gon' do?</h1>
-        <div class="row">
-            <div class="col-sm-6">
-                <h1 class="time-header">10:00 AM</h1>
-                <p class="time-description">
-                    Festival opens. Ongoing Festivities: Instrument Petting Zoo, Face Painting, Bake Sale, etc.
-                </p>
-            </div>
-            <div class="col-sm-6">
-                <h1 class="time-header">11:30 AM</h1>
-                <p class="time-description">
-                    Marching Band/Drumline Performance
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <h1 class="time-header">10:15 AM</h1>
-                <p class="time-description">
-                    Marching Band/Drumline Performance
-                </p>
-            </div>
-            <div class="col-sm-6">
-                <h1 class="time-header">12:00 AM</h1>
-                <p class="time-description closing" id="closing">
-                    Carnival of the Animals Perfomance 2
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <h1 class="time-header">10:45 AM</h1>
-                <p class="time-description">
-                    Carnival of the Animals Performance 1
-                </p>
-            </div>
-            <div class="col-sm-6">
-                <h1 class="time-header">12:30 AM</h1>
-                <p class="time-description">
-                    Second round of raffle called
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <h1 class="time-header">11:15 AM</h1>
-                <p class="time-description">
-                    Raffle winners called/Orchestra Break
-                </p>
-            </div>
-            <div class="col-sm-6">
-                <h1 class="time-header">12:45 AM</h1>
-                <p class="time-description">
-                    Instrument petting zoo closes
-                </p>
-            </div>
-        </div>
-        <h1 class="time-header">01:00 PM</h1>
-        <p class="time-description" id="closing">
-            Closing
-        </p>
-    </main>
-    <a href="#about-container"><span class="section-btn"></span></a>
-</section>
+{% include 'core/includes/index-about-section.html' %}
+{% include 'core/includes/index-schedule-section.html' %}
+<!--sponsors : Thanks to our sponsors: Highwood Theatre, House of Musical Traditions,
+International School of Music, Jordan Kitt’s Music, Roundhouse Theatre, and to the MCPS
+Foundation and the Neighborhood Event Matching Grant Program for their support -->
+<!-- MAPS -->
 {% endblock %}
 
 <!--LOGO SOURCE: logomakr.com/08sZUw

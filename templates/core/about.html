@@ -1,5 +1,52 @@
 {% extends "core/base.html" %}
 {% load static %}
 {% block content %}
-about
+<div id="about-page">
+    <div class="welcome-container">
+        <h1 class="welcome">about</h1>
+        <p class="lead">
+            Montgomery Blair High School Music
+        </p>
+    </div>
+    <div class="container carousel-container">
+        {% include 'core/includes/about-carousel.html' %}
+    </div>
+
+    <div class="container about">
+        <hr class="divider">
+
+        <div class="row">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">our mission.<span class="text-muted"> yes, we have one.</span></h2>
+                <p class="lead">
+                    Donec ullamcorper nulla non metus auctor fringilla. Vestibulum
+                    id ligula porta felis euismod semper. Praesent commodo cursus magna,
+                    vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+                    commodo.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" src="{% static 'core/img/background/orchestra.jpg' %}" alt="Generic placeholder image">
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="row">
+            <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">
+                Donec ullamcorper nulla non metus auctor fringilla.
+                Vestibulum id ligula porta felis euismod semper. Praesent commodo
+                cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus
+                ac cursus commodo.
+            </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="{% static 'core/img/background/jazz-band.jpg' %}" alt="Generic placeholder image">
+            </div>
+        </div>
+
+    </div>
+</div>
 {% endblock %}

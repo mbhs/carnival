@@ -35,11 +35,19 @@ html {
         color: white !important; }
   .navbar:hover {
     background: #fe8371; }
+    .navbar:hover .nav-item {
+      visibility: visible; }
     .navbar:hover .nav-link {
       padding-top: 3em; }
   @media (min-width: 992px) {
+    .navbar .nav-item {
+      visibility: hidden; }
     .navbar .nav-item:hover .nav-link {
       border-top: 5px solid white; } }
+  .navbar .espanol {
+    position: absolute;
+    right: 0;
+    top: 0; }
 
 section {
   position: relative;
@@ -67,6 +75,14 @@ body {
     #cover-container .cover .cover-title {
       font-family: 'Luckiest Guy', cursive;
       font-size: 3em; }
+  #cover-container .section-btn, #cover-container .section-btn::after, #cover-container .section-btn::before {
+    visibility: hidden; }
+  @media (min-width: 768px) {
+    #cover-container .section-btn, #cover-container .section-btn::after, #cover-container .section-btn::before {
+      visibility: visible; } }
+  @media (min-width: 992px) {
+    #cover-container .section-btn, #cover-container .section-btn::after, #cover-container .section-btn::before {
+      visibility: visible; } }
   #cover-container .section-btn {
     position: absolute;
     bottom: 0;
@@ -164,21 +180,56 @@ body {
     #cover-container .animate {
       position: absolute;
       right: 0;
-      visibility: visible; } }
+      visibility: visible;
+      height: 20em;
+      width: 18em; } }
 
 #about-container {
   height: auto;
   position: relative;
   min-height: 100vh !important;
   color: black; }
+  #about-container .trumpet-svg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 12em;
+    height: 12em;
+    margin: 3em;
+    visibility: hidden; }
+  #about-container .violin-svg {
+    position: absolute;
+    z-index: -1;
+    top: 25%;
+    right: 75%;
+    width: 12em;
+    height: 12em;
+    margin: 3em;
+    visibility: hidden; }
+  #about-container .sax-svg {
+    position: absolute;
+    z-index: -1;
+    top: 65%;
+    left: 75%;
+    width: 12em;
+    height: 12em;
+    margin: 3em;
+    visibility: hidden; }
+  @media (min-width: 768px) {
+    #about-container .trumpet-svg, #about-container .violin-svg, #about-container .sax-svg {
+      visibility: visible; } }
   #about-container .about {
     display: flex;
     flex-direction: column;
     margin: auto;
     height: 1%;
-    width: 50%;
+    width: 75%;
     padding-top: 5em;
     text-align: center; }
+    @media (min-width: 992px) {
+      #about-container .about {
+        width: 50%; } }
     #about-container .about .about-lead {
       font-family: 'Open Sans', sans-serif;
       font-size: .9em; }
@@ -202,6 +253,14 @@ body {
       #about-container .about .about-title {
         font-family: 'Luckiest Guy', cursive;
         font-size: 2em; } }
+  #about-container .section-btn, #about-container .section-btn::after, #about-container .section-btn::before {
+    visibility: hidden; }
+  @media (min-width: 768px) {
+    #about-container .section-btn, #about-container .section-btn::after, #about-container .section-btn::before {
+      visibility: visible; } }
+  @media (min-width: 992px) {
+    #about-container .section-btn, #about-container .section-btn::after, #about-container .section-btn::before {
+      visibility: visible; } }
   #about-container .section-btn {
     position: absolute;
     bottom: 0;
@@ -308,18 +367,21 @@ body {
 #schedule-container {
   height: auto;
   position: relative;
-  min-height: 75% !important;
+  min-height: 100% !important;
   color: white;
   background: url("../img/background/orchestra.jpg") no-repeat;
   background-size: cover;
   background-position: fixed; }
   #schedule-container .schedule {
-    background-color: rgba(158, 36, 56, 0.8);
+    background-color: rgba(158, 36, 56, 0.9);
     margin: auto;
     height: auto;
-    width: 50%;
+    width: 75%;
     padding-top: 3em;
     text-align: center; }
+    @media (min-width: 992px) {
+      #schedule-container .schedule {
+        width: 50%; } }
     #schedule-container .schedule .schedule-lead {
       font-family: 'Open Sans', sans-serif;
       font-size: .9em; }
@@ -327,6 +389,11 @@ body {
       font-family: 'Luckiest Guy', cursive;
       font-size: 1.5em;
       margin-bottom: 1em; }
+    #schedule-container .schedule .desc {
+      font-family: 'Open Sans', sans-serif;
+      font-size: .9em;
+      margin: 2em;
+      display: none; }
     #schedule-container .schedule .time-header {
       font-family: 'Luckiest Guy', cursive;
       font-size: 1.25em; }
@@ -334,7 +401,7 @@ body {
       display: inline-block;
       width: 75%;
       font-family: 'Open Sans', sans-serif;
-      font-size: 0.80em;
+      font-size: .9em;
       margin-bottom: 2em; }
     @media (min-width: 576px) {
       #schedule-container .schedule .schedule-lead {
@@ -345,22 +412,34 @@ body {
         font-size: 1.75em; }
       #schedule-container .schedule .time-header {
         font-family: 'Luckiest Guy', cursive;
-        font-size: 1em; }
+        font-size: 1.25em; }
       #schedule-container .schedule .time-description {
         display: inline-block;
         width: 75%;
         font-family: 'Open Sans', sans-serif;
-        font-size: 0.75em;
-        margin-bottom: 1em; } }
+        font-size: 0.8em;
+        margin-bottom: 1em; }
+      #schedule-container .schedule .desc {
+        display: none; } }
     @media (min-width: 768px) {
       #schedule-container .schedule .schedule-lead {
         font-family: 'Open Sans', sans-serif;
         font-size: 1.5em; }
       #schedule-container .schedule .schedule-title {
         font-family: 'Luckiest Guy', cursive;
-        font-size: 2em; } }
+        font-size: 2em; }
+      #schedule-container .schedule .desc {
+        display: block; } }
     #schedule-container .schedule #closing {
       width: 100% !important; }
+  #schedule-container .section-btn, #schedule-container .section-btn::after, #schedule-container .section-btn::before {
+    visibility: hidden; }
+  @media (min-width: 768px) {
+    #schedule-container .section-btn, #schedule-container .section-btn::after, #schedule-container .section-btn::before {
+      visibility: visible; } }
+  @media (min-width: 992px) {
+    #schedule-container .section-btn, #schedule-container .section-btn::after, #schedule-container .section-btn::before {
+      visibility: visible; } }
   #schedule-container .section-btn {
     position: absolute;
     bottom: 0;
@@ -452,5 +531,52 @@ body {
     opacity: 0; }
   100% {
     opacity: 0; } }
+#raffle-container {
+  height: auto;
+  position: relative;
+  min-height: 100vh !important;
+  color: black; }
+
+#about-page {
+  margin-top: 4.5em;
+  text-align: center; }
+  #about-page .welcome-container {
+    display: inline-block;
+    margin: auto; }
+    #about-page .welcome-container .welcome {
+      font-size: 2em;
+      font-weight: 300;
+      letter-spacing: 0.25em;
+      padding-bottom: 0.25em; }
+    #about-page .welcome-container p {
+      width: 18em;
+      margin-bottom: 2em; }
+  #about-page .carousel-container #photo-carousel img {
+    min-width: 100%;
+    height: 15em; }
+  @media (min-width: 576px) {
+    #about-page .carousel-container #photo-carousel img {
+      min-width: 100%;
+      height: 20em; } }
+  @media (min-width: 768px) {
+    #about-page .carousel-container #photo-carousel img {
+      min-width: 100%;
+      height: 30em; } }
+  @media (min-width: 992px) {
+    #about-page .carousel-container #photo-carousel img {
+      min-width: 100%;
+      height: 35em; } }
+  #about-page .about .divider {
+    margin: 2rem 0; }
+  #about-page .about .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+    font-size: 3em; }
+  #about-page .about .row {
+    padding: 4em;
+    background: #9e2438;
+    border-radius: 10px;
+    color: white; }
 
 /*# sourceMappingURL=custom.css.map */

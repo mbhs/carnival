@@ -19,10 +19,14 @@ def contact(request):
     }
     return render(request, 'core/contact.html', context)
 
-def instruments(request):
-    context = {}
-    return render(request, 'core/instruments.html', context)
+def tickets(request):
+    context = {
+        'navbar' : 'tickets'
+    }
+    return render(request, 'core/tickets.html', context)
 
 def organizers(request):
-    context = {}
+    context = {
+        'navbar' : 'organizers'
+    }
     return render(request, 'core/organizers.html', context)

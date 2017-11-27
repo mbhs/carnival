@@ -11,6 +11,7 @@
 
         .nav-item {
             margin-top: 0;
+
             .nav-link {
                 margin-left: 1.5em;
                 margin-right: 1.5em;
@@ -29,17 +30,28 @@
 
     &:hover {
         background: rgba(254,131,113,1);
-
+        .nav-item {
+            visibility: visible;
+        }
         .nav-link {
             padding-top:3em;
         }
     }
 
     @include media-breakpoint-lg() {
+        .nav-item {
+            visibility: hidden;
+        }
         .nav-item:hover {
             .nav-link {
                 border-top: 5px solid white;
             }
         }
+    }
+
+    .espanol {
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 }
