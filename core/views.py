@@ -24,9 +24,3 @@ def tickets(request):
         'navbar' : 'tickets'
     }
     return render(request, 'core/tickets.html', context)
-
-def organizers(request):
-    context = {
-        'navbar' : 'organizers'
-    }
-    return render(request, 'core/organizers.html', context)

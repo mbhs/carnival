@@ -2,39 +2,39 @@
     margin-top: 4.5em;
     text-align: center;
     .welcome-container {
-        display: inline-block;
-        margin: auto;
+        padding:2em;
+        margin: 2em;
+        background: rgba(158,36,56,1);
+        border-radius: 10px;
+        color: white;
         .welcome {
             font-size: 2em;
             font-weight: 300;
             letter-spacing: 0.25em;
             padding-bottom: 0.25em;
         }
-        p {
-            width: 18em;
-            margin-bottom: 2em;
-        }
     }
 
     .carousel-container {
+        margin: none;
+
         #photo-carousel {
             img {
                 min-width: 100%;
-                height: 15em;
+                height: 14em;
             }
         }
         @include media-breakpoint-sm() {
             #photo-carousel {
                 img {
-                    min-width: 100%;
                     height: 20em;
                 }
             }
         };
         @include media-breakpoint-md() {
+            margin: 2em;
             #photo-carousel {
                 img {
-                    min-width: 100%;
                     height: 30em;
                 }
             }
@@ -42,7 +42,6 @@
         @include media-breakpoint-lg() {
             #photo-carousel {
                 img {
-                    min-width: 100%;
                     height: 35em;
                 }
             }
@@ -50,6 +49,11 @@
     }
 
     .about {
+        margin: none;
+        @include media-breakpoint-md() {
+            margin: 2em;
+        };
+        text-align: left;
         .divider {
             margin: 2rem 0;
         }
@@ -59,9 +63,12 @@
           letter-spacing: -.05rem;
           font-size: 3em;
         }
+        .featurette-image {
+
+        }
         .row {
             padding: 4em;
-            background: rgb(158,36,56);
+            background: rgba(158,36,56,1);
             border-radius: 10px;
             color: white;
         }

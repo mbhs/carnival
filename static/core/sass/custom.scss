@@ -5,6 +5,10 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
+body.modal-open {
+    overflow: visible;
+}
+
 @mixin media-breakpoint-sm {
     @media (min-width: 576px) {
         @content;
