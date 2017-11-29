@@ -3,8 +3,12 @@ html {
   font-size: 1rem;
   font-family: 'Open Sans', sans-serif; }
 
-body.modal-open {
-  overflow: visible; }
+body {
+  padding: 0;
+  margin: 0; }
+
+html, body {
+  overflow-x: hidden; }
 
 @media (min-width: 576px) {
   html {
@@ -46,11 +50,11 @@ body.modal-open {
     .navbar .nav-item {
       visibility: hidden; }
     .navbar .nav-item:hover .nav-link {
-      border-top: 5px solid white; } }
-  .navbar .espanol {
-    position: absolute;
-    right: 0;
-    top: 0; }
+      border-top: 5px solid white; }
+    .navbar .espanol {
+      position: absolute;
+      top: 0;
+      right: 0; } }
 
 section {
   position: relative;
@@ -588,5 +592,27 @@ body {
       background: #9e2438;
       border-radius: 10px;
       color: white; }
+    #about-page .about .contact-row {
+      padding: 4em;
+      background: #9e2438;
+      border-radius: 10px; }
+      #about-page .about .contact-row .nav-tabs {
+        background-color: #161616; }
+      #about-page .about .contact-row .tab-content {
+        background-color: #303136;
+        color: #fff;
+        padding: 5px; }
+      #about-page .about .contact-row .tab-pane {
+        padding: 1em; }
+      #about-page .about .contact-row .nav-tabs > li > a {
+        border: medium none; }
+      #about-page .about .contact-row .nav-tabs > li > a:hover {
+        background-color: #303136 !important;
+        border: medium none;
+        border-radius: 0;
+        color: #fff; }
+      #about-page .about .contact-row .card-footer a {
+        color: white;
+        word-break: break-all; }
 
 /*# sourceMappingURL=custom.css.map */

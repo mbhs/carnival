@@ -3,7 +3,6 @@
     background: rgba(158,36,56,0);
     transition: all 0.5s;
     padding-top: 0;
-
     .navbar-nav {
         font-size: 0.75em;
         text-transform: uppercase;
@@ -47,11 +46,11 @@
                 border-top: 5px solid white;
             }
         }
+        .espanol {
+            position: absolute;
+            top: 0;
+            right:0;
+        }
     }
 
-    .espanol {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
 }
