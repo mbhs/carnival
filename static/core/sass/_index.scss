@@ -78,8 +78,8 @@ section {
 }
 
 body {
-    background: url('../img/background/memphis-colorful.png');
-    background-attachment: fixed;
+    //background: url('../img/background/memphis-colorful.png');
+    //background-attachment: fixed;
 }
 
 #cover-container {
@@ -209,20 +209,6 @@ body {
 
     }
     @include section-button(#000, rbga(255,255,255,0.1));
-    .animate {
-        display: none;
-    }
-    @include media-breakpoint-lg() {
-        .animate {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 20em;
-            height: 10em;
-            background: url("../img/icon/flapping-birds.gif") top left no-repeat;
-            background-size: 20em 10em;
-        }
-    };
 }
 
 #schedule-container {
@@ -230,13 +216,12 @@ body {
     position: relative;
     min-height: 100% !important;
     color: white;
-
-    background: url('../img/background/orchestra.jpg') no-repeat;
-    background-size: cover;
-    background-position: fixed;
+    background: url('../img/background/curls.png');
+    //background-size: cover;
+    //background-position: fixed;
 
     .schedule {
-        background-color: rgba(158,36,56,0.90);
+        background-color: rgba(158,36,56,1);
         margin: auto;
         height: auto;
         width: 75%;
@@ -315,9 +300,41 @@ body {
     @include section-button(#fff, rbga(255,255,255,0.1));
 }
 
-#raffle-container {
+#sponsors-container {
     @include section-height(auto);
     position: relative;
-    min-height: 100vh !important;
-    color: black;
+    min-height: 50vh !important;
+    background: rbga(20,21,22,1);
+
+    .sponsors {
+        text-align: center;
+        background-color: rgb(255,106,0);
+        height: auto;
+        width: 100%;
+        position: absolute;
+        padding-top: 3em;
+        vertical-align: middle;
+
+        .sponsors-title {
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 1.5em;
+            margin-bottom: 1em;
+        }
+        .content {
+            display: table;
+            height: auto;
+            margin: 0 auto;
+            position: relative;
+
+            .row {
+                img {
+                    max-width: 10em;
+                    max-height: 10em;
+                    margin:1em;
+                }
+            }
+        }
+        padding-bottom: 2em;
+    }
+    @include section-button(#fff, rbga(255,255,255,0.1));
 }
