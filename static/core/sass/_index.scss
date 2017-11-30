@@ -113,6 +113,7 @@ body {
     @include media-breakpoint-lg() {
         .animate {
             position: absolute;
+            top:50px;
             right: 0;
             visibility: visible;
             height: 20em;
@@ -124,9 +125,9 @@ body {
 #about-container {
     @include section-height(auto);
     position: relative;
-    min-height: 100vh !important;
+    min-height: 95vh !important;
     color: black;
-
+    padding-bottom: 3em;
     .trumpet-svg {
         position: absolute;
         z-index: -1;
@@ -150,7 +151,7 @@ body {
     .sax-svg {
         position: absolute;
         z-index: -1;
-        top:65%;
+        top:55%;
         left: 75%;
         width: 12em;
         height: 12em;
@@ -169,7 +170,6 @@ body {
         margin: auto;
         height: 1%;
         width: 75%;
-        padding-bottom: 4em;
         @include media-breakpoint-lg() {
             width: 50%;
         };
@@ -218,7 +218,7 @@ body {
 #schedule-container {
     @include section-height(auto);
     position: relative;
-    min-height: 100% !important;
+    min-height: 95vh !important;
     color: white;
     background: rgb(20,21,22);
 
@@ -262,6 +262,7 @@ body {
     .schedule {
         background-color: rgba(158,36,56,1);
         margin: auto;
+        min-height: 95vh;
         height: auto;
         width: 75%;
         @include media-breakpoint-lg() {
@@ -349,9 +350,10 @@ body {
     .sponsors {
         text-align: center;
         background-color: rgb(255,106,0);
+        min-height: 50vh;
         height: auto;
         width: 100%;
-        position: absolute;
+        position: relative;
         padding-top: 3em;
         vertical-align: middle;
 
@@ -377,16 +379,23 @@ body {
             height: auto;
             margin: 0 auto;
             position: relative;
-
             .row {
                 img {
                     max-width: 10em;
                     max-height: 10em;
-                    margin:1em;
+                    margin: 1em;
                 }
             }
+            @include media-breakpoint-md() {
+                .row {
+                    img {
+                        max-width: 12vw;
+                        max-height: 12vh;
+                    }
+                }
+            }
+
         }
-        padding-bottom: 2em;
     }
     @include section-button(#000, rbga(0,0,0,0.1));
 }

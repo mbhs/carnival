@@ -1,6 +1,6 @@
 
 .navbar {
-    background: rgba(158,36,56,0);
+    background: rgba(158,36,56,1);
     transition: all 0.5s;
     padding-top: 0;
     .navbar-nav {
@@ -30,7 +30,7 @@
     &:hover {
         background: rgba(254,131,113,1);
         .nav-item {
-            visibility: visible;
+
         }
         .nav-link {
             padding-top:3em;
@@ -38,8 +38,9 @@
     }
 
     @include media-breakpoint-lg() {
+        background: rgba(158,36,56,1);
         .nav-item {
-            visibility: hidden;
+
         }
         .nav-item:hover {
             .nav-link {
