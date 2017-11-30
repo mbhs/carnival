@@ -78,6 +78,8 @@ section {
     #cover-container .cover .cover-title {
       font-family: 'Luckiest Guy', cursive;
       font-size: 3em; }
+    #cover-container .cover p a {
+      color: white; }
   #cover-container .section-btn, #cover-container .section-btn::after, #cover-container .section-btn::before {
     visibility: hidden; }
   @media (min-width: 768px) {
@@ -228,6 +230,7 @@ section {
     margin: auto;
     height: 1%;
     width: 75%;
+    padding-bottom: 4em;
     padding-top: 5em;
     text-align: center; }
     @media (min-width: 992px) {
@@ -360,7 +363,37 @@ section {
   position: relative;
   min-height: 100% !important;
   color: white;
-  background: url("../img/background/curls.png"); }
+  background: #141516; }
+  #schedule-container .trumpet-svg {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 12em;
+    height: 12em;
+    margin: 3em;
+    visibility: hidden; }
+  #schedule-container .violin-svg {
+    position: absolute;
+    z-index: 0;
+    top: 25%;
+    left: 75%;
+    width: 12em;
+    height: 12em;
+    margin: 3em;
+    visibility: hidden; }
+  #schedule-container .sax-svg {
+    position: absolute;
+    z-index: 0;
+    top: 65%;
+    right: 75%;
+    width: 12em;
+    height: 12em;
+    margin: 3em;
+    visibility: hidden; }
+  @media (min-width: 992px) {
+    #schedule-container .trumpet-svg, #schedule-container .violin-svg, #schedule-container .sax-svg {
+      visibility: visible; } }
   #schedule-container .schedule {
     background-color: #9e2438;
     margin: auto;
@@ -421,7 +454,7 @@ section {
         display: block; } }
     #schedule-container .schedule #closing {
       width: 100% !important;
-      padding-bottom: 2em; }
+      padding-bottom: 4em; }
   #schedule-container .section-btn, #schedule-container .section-btn::after, #schedule-container .section-btn::before {
     visibility: hidden; }
   @media (min-width: 768px) {
@@ -680,9 +713,9 @@ section {
       letter-spacing: 0.25em;
       padding-bottom: 0.25em; }
   #about-page .carousel-container {
-    margin: none; }
+    text-align: center; }
     #about-page .carousel-container #photo-carousel img {
-      min-width: 100%;
+      width: 100%;
       height: 14em; }
     @media (min-width: 576px) {
       #about-page .carousel-container #photo-carousel img {
@@ -691,10 +724,10 @@ section {
       #about-page .carousel-container {
         margin: 2em; }
         #about-page .carousel-container #photo-carousel img {
-          height: 30em; } }
+          height: 24em; } }
     @media (min-width: 992px) {
       #about-page .carousel-container #photo-carousel img {
-        height: 35em; } }
+        height: 26em; } }
   #about-page .about {
     margin: none;
     text-align: left; }
