@@ -7,12 +7,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
 	<script src="{% static 'core/js/bootstrap.min.js' %}"></script>
     <link rel="stylesheet" type="text/css" href="{% static 'core/css/custom.css' %}">
-    <!-- MOBILE STYLESHEET -->
-
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script>
-        $(document).ready(function() {
-
-        });
+        AOS.init({
+          duration: 1200,
+        })
     </script>
 {% endblock %}
 

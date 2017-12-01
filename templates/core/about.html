@@ -1,6 +1,11 @@
 {% extends "core/base.html" %}
 {% load static %}
 {% block content %}
+<script>
+    AOS.init({
+      duration: 1200,
+    })
+</script>
 <div id="about-page">
     <div class="carousel-container">
         {% include 'core/includes/about-carousel.html' %}
@@ -8,12 +13,12 @@
     <div class="container">
         <div class="row" style="margin-bottom:3em;">
             <div class="col-sm-7">
-                <div class="row mb-3">
+                <div class="row mb-3" data-aos="fade-up">
                     <div class="card">
                         <div class="card-header text-center">
                             The Piece
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" >
                             <h4 class="card-title">Carnival of the Animals</h4>
                             <p class="card-text">
                                 <i>The Carnival of the Animals</i> is a humorous musical suite of fourteen movements
@@ -28,7 +33,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" data-aos="fade-up">
                     <div class="card">
                         <div class="card-body">
                             <p class="card-text">
@@ -40,12 +45,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-5 pr-0">
+            <div class="col-sm-5 pr-0" data-aos="fade-up">
                 <div class="card h-100">
                     <div class="card-header text-center">
                         Event
                     </div>
-                    <div class="card-body">
+                    <div class="card-body text-right">
                         <h4 class="card-title">Instrument Petting Zoo</h4>
                         <p class="card-text">
                             Member of Blair Bands and Orchestras will be on hand with their instruments so
@@ -60,7 +65,7 @@
         </div> <!-- FIRST ROW -->
 
         <div class="row" style="margin-bottom:3em;">
-            <div class="col-sm-5 pl-0">
+            <div class="col-sm-5 pl-0" data-aos="fade-up">
                 <div class="card h-100">
                     <div class="card-header text-center">
                         Event
@@ -75,7 +80,7 @@
                         </p>
                         <blockquote class="blockquote mb-0 text-muted">
                             <p>
-                                Simply defined, face painting is the highest degree of with which one can express oneself
+                                Simply defined, face painting is the highest degree with which one can express oneself
                                 by painting on their face.
                             </p>
                             <footer class="blockquote-footer">someone famous</footer>
@@ -84,12 +89,12 @@
                 </div>
             </div>
             <div class="col-sm-7">
-                <div class="row mb-3">
+                <div class="row mb-3" data-aos="fade-up">
                     <div class="card">
                         <div class="card-header text-center">
                             Event
                         </div>
-                        <div class="card-body">
+                        <div class="card-body text-right">
                             <h4 class="card-title">Instrument Making</h4>
                             <p class="card-text">
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -100,19 +105,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" data-aos="fade-up">
                     <div class="card">
                         <div class="card-header text-center">
                             Event
                         </div>
                         <img class="pt-3 d-inline-block mx-auto" src="{% static 'core/img/icon/cupcake.svg' %}" alt="cupcake.svg" style="width:100px;height:100px;">
-                        <div class="card-body">
+                        <div class="card-body text-right">
                             <h4 class="card-title">Cupcake Walk</h4>
                             <p class="card-text">
                                 A chance to win a cupcake! The game begins when the music starts; children
                                 walk around in a circle as the music is playing. When the music stops, the
                                 children stop. A volunteer will pull out a number from a hat and the child
-                                at the number wins a cupcake!
+                                standing at the number wins a cupcake!
                             </p>
                         </div>
                     </div>
@@ -121,7 +126,7 @@
         </div> <!-- END ROW DESC 2 -->
 
         <div class="row" style="margin-bottom:3em;">
-            <div class="col-sm-6 pl-0">
+            <div class="col-sm-6 pl-0" data-aos="fade-up">
                 <div class="card h-100">
                     <div class="card-header text-center">
                         Event
@@ -140,12 +145,12 @@
                 </div>
             </div>
             <div class="col-sm-6">
-                <div class="row mb-3">
+                <div class="row mb-3" data-aos="fade-up">
                     <div class="card">
                         <div class="card-header text-center">
                             Event
                         </div>
-                        <div class="card-body">
+                        <div class="card-body text-right">
                             <h4 class="card-title">Bake Sale</h4>
                             <p class="card-text">
                                 A bake sale will be held throughout the event. Buy baked goods such as
@@ -155,12 +160,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row item" data-aos="fade-up">
                     <div class="card">
                         <div class="card-header text-center">
                             Event
                         </div>
-                        <div class="card-body">
+                        <div class="card-body text-right">
                             <h4 class="card-title">Marching Band</h4>
                             <p class="card-text">
                                 The festival will also feature the MBHS Marching Band, performing who knows
@@ -173,8 +178,8 @@
         </div>
     </div> <!-- EVENT DESC CONTAINER -->
 
-    <div class="container bbop-card">
-        <h1 class="about-cards-title my-4 text-center">Special Thanks</h1>
+    <div class="container bbop-card mb-3">
+        <h1 class="about-cards-title my-4 text-center">Special Thanks To</h1>
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
@@ -190,7 +195,7 @@
                             made up of parents of instrumental music students and their
                             support is invaluable.
                         </p>
-                        <a href="#" class="btn btn-outline-light">Learn More</a>
+                        <a href="http://www.mbhsmusic.com/bbops.html" target="_blank" class="btn btn-outline-light">Learn More</a>
                     </div>
                 </div>
             </div>

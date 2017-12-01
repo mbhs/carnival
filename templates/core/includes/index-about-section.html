@@ -1,35 +1,40 @@
 {% load static %}
+<script>
+    AOS.init({
+      duration: 1200,
+    })
+</script>
 <section id="about-container">
     <main role="main" class="about">
-        <img class="trumpet-svg" src="{% static 'core/img/background/piano-color.png' %}" alt="trumpet.svg">
-        <img class="violin-svg" src="{% static 'core/img/background/xylophone-color.png' %}" alt="violin.svg">
-        <img class="sax-svg" src="{% static 'core/img/background/flute-color.png' %}" alt="sax.svg">
+        <img class="trumpet-svg" data-aos="fade-left" src="{% static 'core/img/background/piano-color.png' %}" alt="trumpet.svg">
+        <img class="violin-svg" data-aos="fade-right" src="{% static 'core/img/background/xylophone-color.png' %}" alt="violin.svg">
+        <img class="sax-svg" data-aos="fade-left" src="{% static 'core/img/background/flute-color.png' %}" alt="sax.svg">
 
         <!-- <h1 class="about-lead">About /</h1> -->
-        <h1 class="about-title">The Event</h1>
-        <p class="">
+        <h1 class="about-title" data-aos="fade-up">The Event</h1>
+        <p class="" data-aos="fade-up">
             The Carnival of the Animals is a community music festival hosted by Montgomery Blair High School.
             Our goal is to provide a fun and educating musical experience for young children.
         </p>
-        <p class="">
+        <p class="" data-aos="fade-up">
             The festival's main event will be a performance of <i>Carnival of the Animals</i>, by Camille Saint-Saëns.
             We will also feature an "Instrument Petting Zoo," a marching band, instrument making, face painting,
             raffle prizes, and more.
         </p>
-        <h1 class="about-title">Instrument Petting Zoo</h1>
-        <p class="">
+        <h1 class="about-title" data-aos="fade-up">Instrument Petting Zoo</h1>
+        <p class="" data-aos="fade-up">
             Member of Blair Bands and Orchestras will be on hand with their instruments
             so kids can see them, learn a bit about them and can try them out. We expect
             to have a full compliment of band and orchestra instruments,
             as well as pianos on hand.  This is something the National Symphony Orchestra
             does, but it costs way more and is all the way downtown!
         </p>
-        <h1 class="about-title">Raffle Prizes</h1>
-        <p class="">
+        <h1 class="about-title" data-aos="fade-up">Raffle Prizes</h1>
+        <p class="" data-aos="fade-up">
             Win a FREE week of summer camp @ <a href="#">Roundhouse Theatre</a>, a ukulele, free music
             lessons, and more!
         </p>
-        <a href="{% url 'about' %}" role="button" class="btn btn-outline-dark mb-2">Learn More!</a>
+        <a href="{% url 'about' %}" role="button" class="btn btn-outline-dark mb-2" data-aos="fade-up">Learn More!</a>
     </main>
     <a href="#schedule-container"><span class="section-btn"></span></a>
 </section>

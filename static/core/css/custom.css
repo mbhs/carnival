@@ -95,6 +95,10 @@ section {
   width: 100vw;
   max-width: 100%; }
 
+body {
+  background: url("../img/background/memphis-colorful.png");
+  background-attachment: fixed; }
+
 #cover-container {
   height: 100vh;
   color: white;
@@ -751,8 +755,7 @@ section {
     background-color: grey; }
 
 #about-page {
-  padding-top: 2.75em;
-  background: #141516; }
+  padding-top: 2.75em; }
   #about-page .carousel-container {
     width: 100%;
     max-height: 1vh;
@@ -779,8 +782,10 @@ section {
       text-transform: lowercase; }
     #about-page .card .card-title {
       font-family: 'Luckiest Guy', sans-serif; }
+    #about-page .card .card-text {
+      color: #d2d2d2; }
   #about-page .bbop-card .about-cards-title {
-    color: white;
+    color: black;
     font-size: 2em;
     font-family: 'Luckiest Guy', sans-serif; }
 

@@ -1,6 +1,5 @@
 #about-page {
     padding-top: 2.75em;
-    background: rgb(20,21,22);
 
     .carousel-container {
         width: 100%;
@@ -43,11 +42,14 @@
         .card-title {
             font-family: 'Luckiest Guy', sans-serif;
         }
+        .card-text {
+            color:rgb(210,210,210);
+        }
     }
 
     .bbop-card {
         .about-cards-title {
-            color: white;
+            color: black;
             font-size: 2em;
             font-family: 'Luckiest Guy', sans-serif;
         }
