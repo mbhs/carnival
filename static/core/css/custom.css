@@ -49,6 +49,29 @@ html, body {
   .ticket-modal .modal-content li:first-child:before {
     content: ''; }
 
+.contact-modal .modal-content {
+  background-color: #9fd2ff;
+  color: black;
+  line-height: 1em;
+  font-family: 'Luckiest Guy', sans-serif; }
+  .contact-modal .modal-content .close {
+    font-family: 'Open Sans', sans-serif;
+    opacity: 0.75; }
+    .contact-modal .modal-content .close:hover {
+      opacity: 1;
+      cursor: pointer; }
+  .contact-modal .modal-content .hello-row a {
+    font-family: 'Open Sans', sans-serif; }
+  .contact-modal .modal-content .address-row {
+    line-height: 2em; }
+  .contact-modal .modal-content .form {
+    font-family: 'Open Sans', sans-serif; }
+    .contact-modal .modal-content .form input {
+      margin-bottom: 0.5em; }
+  .contact-modal .modal-content .fa {
+    color: black;
+    margin: 0.5em; }
+
 .navbar {
   background: #9e2438;
   transition: all 0.5s;

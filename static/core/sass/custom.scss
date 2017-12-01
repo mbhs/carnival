@@ -119,6 +119,42 @@ html, body { overflow-x: hidden; }
 
 //MODAL-CONTACT
 .contact-modal .modal-content {
+    background-color: rgb(159,210,255);
+    color: black;
+    line-height: 1em;
+    font-family: 'Luckiest Guy', sans-serif;
+
+    .close {
+        font-family: 'Open Sans', sans-serif;
+        opacity: 0.75;
+        &:hover{
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+
+    .hello-row {
+        a {
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+
+    .address-row {
+        line-height: 2em;
+    }
+
+    .form {
+        font-family: 'Open Sans', sans-serif;
+
+        input {
+            margin-bottom: 0.5em;
+        }
+    }
+
+    .fa {
+        color: black;
+        margin: 0.5em;
+    }
 
 }
 
