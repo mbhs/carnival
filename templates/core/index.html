@@ -1,15 +1,20 @@
 {% extends "core/base.html" %}
 {% load static %}
 {% block content %}
+<script>
+    AOS.init({
+      duration: 1600,
+    })
+</script>
 <section id="cover-container">
-    <main role="main" class="cover">
-        <h1 class="cover-lead">MBHS Music Presents:</h1>
-        <h1 class="cover-title">Carnival of the Animals</h1>
-        <object style="fill:white" data="{% static 'core/img/background/cello-outline-bottom.svg' %}" type="image/svg+xml"></object>
-        <p class="lead">
+    <main role="main" class="cover" >
+        <h1 class="cover-lead" data-aos="zoom-out">MBHS Music Presents:</h1>
+        <h1 class="cover-title" data-aos="zoom-out">Carnival of the Animals</h1>
+        <object style="fill:white" data-aos="zoom-out" data="{% static 'core/img/background/cello-outline-bottom.svg' %}" type="image/svg+xml"></object>
+        <p class="lead" data-aos="zoom-out">
             Saturday, January 6 | 10AM - 1PM
         </p>
-        <p class="lead">
+        <p class="lead" data-aos="zoom-out">
             <a href="https://www.google.com/maps/place/Montgomery+Blair+High+School/@39.0187326,-77.0139629,17z/data=!4m19!1m13!4m12!1m4!2m2!1d-77.0119759!2d39.0182537!4e1!1m6!1m2!1s0x89b7cf586f9b73d5:0xc227c473fffb50c7!2sMontgomery+Blair+High+School,+51+University+Blvd+E,+Silver+Spring,+MD+20901!2m2!1d-77.011656!2d39.0183042!3m4!1s0x89b7cf586f9b73d5:0xc227c473fffb50c7!8m2!3d39.0183042!4d-77.011656" target="_blank">
                 51 University Blvd E, Silver Spring, MD 20901
             </a>
@@ -17,7 +22,8 @@
         <a href="https://blairmusic.ticketleap.com/carnival/" role="button" class="btn btn-outline-light d-block">Presale Tickets $5</a>
     </main>
     <a href="#about-container"><span class="section-btn"></span></a>
-    <img src="{% static 'core/img/icon/bird.svg' %}" class="animate" alt="bird.svg">
+    <img data-aos="zoom-out" src="{% static 'core/img/background/lion-outline.png' %}" class="animate" alt="new-lion.png">
+    <img data-aos="zoom-in" src="{% static 'core/img/background/cello-color.png' %}" class="animate-2" alt="cello.png">
 </section>
 {% include 'core/includes/index-about-section.html' %}
 {% include 'core/includes/index-schedule-section.html' %}

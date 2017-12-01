@@ -1,106 +1,58 @@
 #about-page {
-    margin-top: 4.5em;
-    text-align: center;
-    .welcome-container {
-        padding:2em;
-        margin: 2em;
-        background: rgba(158,36,56,1);
-        border-radius: 10px;
-        color: white;
-        .welcome {
-            font-size: 2em;
-            font-weight: 300;
-            letter-spacing: 0.25em;
-            padding-bottom: 0.25em;
-        }
-    }
+    padding-top: 2.75em;
 
     .carousel-container {
-        text-align: center;
-
+        width: 100%;
+        max-height: 1vh;
+        padding-bottom: 56.25%;
+        background: rgba(158,36,56,1);
+        font-family: 'Luckiest Guy', sans-serif;
+        .carousel-caption h3 {
+            letter-spacing: 0.5em;
+            color: rgb(159,210,255);
+        }
+        .carousel-caption p {
+            letter-spacing: 0.5em;
+        }
         #photo-carousel {
-            img {
-                min-width: 100%;
-                height: 14em;
+            .carousel-inner {
+
             }
         }
-        @include media-breakpoint-sm() {
-            #photo-carousel {
-                img {
-                    height: 20em;
-                }
-            }
-        };
-        @include media-breakpoint-md() {
-            margin: 2em;
-            #photo-carousel {
-                img {
-                    height: 30em;
-                }
-            }
-        };
-        @include media-breakpoint-lg() {
-            #photo-carousel {
-                img {
-                    height: 35em;
-                }
-            }
-        };
+        margin-bottom: 2em;
     }
 
-    .about {
-        margin: none;
-        @include media-breakpoint-md() {
-            margin: 2em;
-        };
-        text-align: left;
-        .divider {
-            margin: 2rem 0;
-        }
-        .featurette-heading {
-          font-weight: 300;
-          line-height: 1;
-          letter-spacing: -.05rem;
-          font-size: 3em;
-        }
-        .featurette-image {
-
-        }
-        .row {
-            padding: 4em;
-            background: rgba(158,36,56,1);
-            border-radius: 10px;
-            color: white;
-        }
-        .contact-row {
-            padding: 4em;
-            background: rgba(158,36,56,1);
-            border-radius: 10px;
-            .nav-tabs{
-              background-color:#161616;
-            }
-            .tab-content{
-                background-color:#303136;
-                color:#fff;
-                padding:5px
-            }
-            .tab-pane {
-                padding: 1em;
-            }
-            .nav-tabs > li > a{
-              border: medium none;
-            }
-            .nav-tabs > li > a:hover{
-              background-color: #303136 !important;
-                border: medium none;
-                border-radius: 0;
-                color:#fff;
-            }
-            .card-footer a {
-                color: white;
-                word-break: break-all;
-            }
+    @media (max-width: 576px) {
+        .col-sm-6, .col-sm-5, .col-sm-7, .col-sm-8, .col-sm-4 {
+            padding-left: 0;
+            padding-right: 0;
+            margin-bottom: 1em;
         }
     }
 
+    .card {
+        background: rgb(30,30,47);
+        //border: 1px solid white;
+        color: white;
+        .card-header {
+            background: rgb(158,36,56);
+            letter-spacing: 0.25em;
+            text-transform: lowercase;
+        }
+        .card-title {
+            font-family: 'Luckiest Guy', sans-serif;
+        }
+        .card-text {
+            color:rgb(210,210,210);
+        }
+    }
+
+    .bbop-card {
+        .about-cards-title {
+            color: black;
+            font-size: 2em;
+            font-family: 'Luckiest Guy', sans-serif;
+        }
+
+    }
 }

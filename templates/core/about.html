@@ -1,104 +1,205 @@
 {% extends "core/base.html" %}
 {% load static %}
 {% block content %}
+<script>
+    AOS.init({
+      duration: 1200,
+    })
+</script>
 <div id="about-page">
-    <div class="welcome-container">
-        <h1 class="welcome">about</h1>
-        <p class="lead">
-            Montgomery Blair High School Music
-        </p>
-    </div>
     <div class="carousel-container">
         {% include 'core/includes/about-carousel.html' %}
     </div>
+    <div class="container">
+        <div class="row" style="margin-bottom:3em;">
+            <div class="col-sm-7">
+                <div class="row mb-3" data-aos="fade-up">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            The Piece
+                        </div>
+                        <div class="card-body" >
+                            <h4 class="card-title">Carnival of the Animals</h4>
+                            <p class="card-text">
+                                <i>The Carnival of the Animals</i> is a humorous musical suite of fourteen movements
+                                by the French Romantic composer Camille Saint-Saëns. <i>The Carnival of the Animals</i>
+                                 is supposed to be fun. Each of the suite's 14 movements introduces us
+                                to a different animal or group of animals, with a small number of instruments
+                                 mimicking their voices or the way they move. Starting with the lion's roar and
+                                 slowing to reflect the elephant's bulk, Saint-Saens pokes fun at the music of his time.
+                                 The piece has become one of Saint-Saëns's best-known works.
+                            </p>
+                            <a href="#" class="btn btn-outline-light">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">
+                                The Outstanding Blair Chamber Orchestra will play the piece,
+                                accompanied by a simultaneously running video for young children linking the
+                                instruments and animals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 pr-0" data-aos="fade-up">
+                <div class="card h-100">
+                    <div class="card-header text-center">
+                        Event
+                    </div>
+                    <div class="card-body text-right">
+                        <h4 class="card-title">Instrument Petting Zoo</h4>
+                        <p class="card-text">
+                            Member of Blair Bands and Orchestras will be on hand with their instruments so
+                            kids can see them, learn a bit about them and can try them out. We expect to have a
+                            full compliment of band and orchestra instruments, as well as pianos on hand.  This is
+                            something the National Symphony Orchestra does, but it costs way more and is all the way
+                            downtown!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- FIRST ROW -->
 
-    <div class="about">
-        <hr class="divider">
+        <div class="row" style="margin-bottom:3em;">
+            <div class="col-sm-5 pl-0" data-aos="fade-up">
+                <div class="card h-100">
+                    <div class="card-header text-center">
+                        Event
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Face Painting</h4>
+                        <p class="card-text">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        </p>
+                        <blockquote class="blockquote mb-0 text-muted">
+                            <p>
+                                Simply defined, face painting is the highest degree with which one can express oneself
+                                by painting on their face.
+                            </p>
+                            <footer class="blockquote-footer">someone famous</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="row mb-3" data-aos="fade-up">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            Event
+                        </div>
+                        <div class="card-body text-right">
+                            <h4 class="card-title">Instrument Making</h4>
+                            <p class="card-text">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            Event
+                        </div>
+                        <img class="pt-3 d-inline-block mx-auto" src="{% static 'core/img/icon/cupcake.svg' %}" alt="cupcake.svg" style="width:100px;height:100px;">
+                        <div class="card-body text-right">
+                            <h4 class="card-title">Cupcake Walk</h4>
+                            <p class="card-text">
+                                A chance to win a cupcake! The game begins when the music starts; children
+                                walk around in a circle as the music is playing. When the music stops, the
+                                children stop. A volunteer will pull out a number from a hat and the child
+                                standing at the number wins a cupcake!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- END ROW DESC 2 -->
 
+        <div class="row" style="margin-bottom:3em;">
+            <div class="col-sm-6 pl-0" data-aos="fade-up">
+                <div class="card h-100">
+                    <div class="card-header text-center">
+                        Event
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Raffle</h4>
+                        <p class="card-text">
+                            A raffle will be and called twice through the event. Prizes include:
+                        </p>
+                        <ul>
+                            <li>FREE week of summer camp at Roundhouse Theatre</li>
+                            <li>A ukulele</li>
+                            <li>Free music lessons and more</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="row mb-3" data-aos="fade-up">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            Event
+                        </div>
+                        <div class="card-body text-right">
+                            <h4 class="card-title">Bake Sale</h4>
+                            <p class="card-text">
+                                A bake sale will be held throughout the event. Buy baked goods such as
+                                brownies, cookies, cupcakes, and more! All proceeds go towards funding
+                                Blair Music and help support events such as this one.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row item" data-aos="fade-up">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            Event
+                        </div>
+                        <div class="card-body text-right">
+                            <h4 class="card-title">Marching Band</h4>
+                            <p class="card-text">
+                                The festival will also feature the MBHS Marching Band, performing who knows
+                                what.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- EVENT DESC CONTAINER -->
+
+    <div class="container bbop-card mb-3">
+        <h1 class="about-cards-title my-4 text-center">Special Thanks To</h1>
         <div class="row">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">our mission.<span class="text-muted"> yes, we have one.</span></h2>
-                <p class="lead">
-                    Our mission is to encourage young children to pursue music education in school.
-                </p>
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-fluid mx-auto" src="{% static 'core/img/background/chamber-orchestra.png' %}" alt="Generic placeholder image">
-            </div>
-        </div>
-
-        <hr class="divider">
-
-        <div class="row">
-            <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">About the piece. <span class="text-muted">Its gucci fam.</span></h2>
-                <p class="lead">
-                    Carnival of the Animals is a humorous musical suite of fourteen movements by
-                    the French Romantic composer Camille Saint-Saëns. Each of the suite&#39;s 14 movements
-                    introduces us to a different animal or group of animals.
-                    Starting with the lion&#39;s roar and slowing to reflect the elephant&#39;s bulk,
-                    Saint-Saens pokes fun at the music of his time. Carnival has become
-                    one of Saint-Saëns&#39;s best-known works.
-                </p>
-            </div>
-            <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" src="{% static 'core/img/background/jazz-band.jpg' %}" alt="Generic placeholder image">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header text-center">
+                        BBOPS
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Blair Band and Orchestra Patrons</h4>
+                        <p class="card-text">
+                            The Blair Band and Orchestra Patrons (or BBOPS) is
+                            the booster organization that supports Montgomery Blair
+                            High School's Instrumental Music program.  This group is
+                            made up of parents of instrumental music students and their
+                            support is invaluable.
+                        </p>
+                        <a href="http://www.mbhsmusic.com/bbops.html" target="_blank" class="btn btn-outline-light">Learn More</a>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <hr class="divider">
-
-        <div class="contact-row">
-            <nav class="nav nav-tabs" id="myTab" role="tablist">
-              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Director</a>
-              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Organizers</a>
-              <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Additional</a>
-            </nav>
-            <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                  <h1 class="featurette-heading">Michelle Roberts</h1>
-                  <p class="lead">
-                      With no previous teaching experience other than student teaching for eight weeks
-                      in both an elementary school and middle school, Roberts entered Blair and started
-                      her career teaching five different music classes. No matter what Roberts may meet
-                      down the road, she will always stand by her theme: "Make it work!"
-                  </p>
-                  <footer class="card-footer">
-                      <p class="text-muted">
-                          Email: <a href="mailto:Michelle_Roberts@mcpsmd.org">Michelle_Roberts@mcpsmd.org</a>
-                      </p>
-                  </footer>
-              </div>
-              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                  <h1 class="featurette-heading">Lisa Silverberg</h1>
-                  <p class="lead">
-                      These are cool people.Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
-                  <footer class="card-footer">
-                      <p class="text-muted">
-                          Email: <a href="mailto:blairmusic2020@gmail.com">blairmusic2020@gmail.com</a>
-                      </p>
-                  </footer>
-              </div>
-              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    <h1 class="featurette-heading">Sponsors</h1></h1>
-                    <p class="lead">
-                        Insert sponsors here
-                    </p>
-              </div>
-            </div>
-        </div>
-
-        <script>
-            $('#myTab a').on('click', function (e) {
-              e.preventDefault();
-              e.stopImmediatePropagation();
-              $(this).tab('show');
-          });
-        </script>
     </div>
 </div>
 {% endblock %}

@@ -1,50 +1,40 @@
 {% load static %}
-<div class="modal ticket-modal" tabindex="-1" role="dialog" aria-labelledby="ticket-modal" aria-hidden="true" id="ticket-modal">
+<div class="modal fade ticket-modal" tabindex="-1" role="dialog" aria-labelledby="ticket-modal" aria-hidden="true" id="ticket-modal">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h6 class="modal-title" id="ticket-modal">Buy Tickets</h6>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
+              <img class="d-block" src="{% static 'core/img/icon/ticket.svg' %}" alt="ticket.svg" style="width:5em;height:2.5em;position:absolute;">
+              <h4 class="modal-title mx-auto d-block">Tickets</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
           </div>
           <div class="modal-body">
-             <div class="container-fluid">
-                 <div class="row">
-                     <div class="col-8 col-md-6">
-                        <h1 class="">Tickets</h1>
-                        <p>
-                            PRESALE TICKETS for $5.
-                        </p>
-                        <a href="#" role="button" class="btn btn-outline-dark d-block">Presale Tickets $5</a>
-                     </div>
-                     <div class="col-4 col-md-6">
-                         <img src="{% static 'core/img/background/chamber-orchestra.png' %}" alt="chamber-orchestra.png" class="img-fluid">
-                     </div>
-                 </div>
-                 <hr>
-                 <div class="row">
-                     <div class="col-4 col-md-6">
-                         <img src="{% static 'core/img/background/chamber-orchestra.png' %}" alt="chamber-orchestra.png" class="img-fluid">
-                     </div>
-                     <div class="col-8 col-md-6">
-                        <p>
-                            Tickets at the door:
-                        </p>
-                        <ul>
-                            <li>1 for $7.50</li>
-                            <li>2 for $15</li>
-                            <li>3 for $20</li>
-                            <li>4 for $25</li>
-                            <li>5 for $30</li>
-                        </ul>
-                     </div>
-                 </div>
-             </div>
+              <p class="lead text-center enlarge">
+                  Presale tickets are $5 online!
+              </p>
+              <img class="img-responsive" src="{% static 'core/img/icon/tortoise.svg' %}" alt="ticket.svg" >
+              <a class="btn btn-block btn-large btn-outline-light mx-auto py-4" href="https://blairmusic.ticketleap.com/carnival/" role="button">Buy Tickets Now!</a>
+              <p class="my-3">
+                  Ticket Prices @ door:
+              </p>
+              <ul>
+                  <li>1 for $7.50</li>
+                  <li>2 for $15</li>
+                  <li>3 for $20</li>
+                  <li>4 for $25</li>
+                  <li>5 for $30</li>
+              </ul>
           </div>
           <div class="modal-footer">
-            <a href="https://blairmusic.ticketleap.com/carnival/" role="button" class="btn btn-outline-dark d-block">Presale Tickets $5</a>
+
           </div>
         </div>
       </div>
 </div>
+<script>
+$(document.body).on('shown.bs.modal,show.bs.modal', function () {
+    $('body').css('padding-right','0');
+});
+</script>
+<!-- <a href="https://blairmusic.ticketleap.com/carnival/" role="button" class="btn btn-outline-dark d-block">Presale Tickets $5</a> -->

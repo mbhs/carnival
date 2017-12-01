@@ -1,9 +1,14 @@
 {% load static %}
+<script>
+    AOS.init({
+      duration: 1200,
+    })
+</script>
 <div id="sponsors-container">
     <main class="sponsors" role="main">
-        <h1 class="sponsors-title">Sponsors</h1>
+        <h1 class="sponsors-title" data-aos="fade-up">Thanks to Our Wonderful Sponsors</h1>
         <div class="content mx-auto">
-            <div class="row text-center mx-auto">
+            <div class="row text-center mx-auto" data-aos="fade-up">
                 <div class="col-2-md text-center">
                     <a href="https://hmtrad.com/" target="_blank">
                         <img class="img-fluid" src="{% static 'core/img/background/house-musical-traditions.png' %}" alt="alt">
