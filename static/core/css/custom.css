@@ -752,7 +752,7 @@ section {
 
 #about-page {
   padding-top: 2.75em;
-  background: #14142f; }
+  background: #141516; }
   #about-page .carousel-container {
     width: 100%;
     max-height: 1vh;
@@ -761,9 +761,24 @@ section {
     font-family: 'Luckiest Guy', sans-serif;
     margin-bottom: 2em; }
     #about-page .carousel-container .carousel-caption h3 {
-      letter-spacing: 0.5em; }
+      letter-spacing: 0.5em;
+      color: #9fd2ff; }
     #about-page .carousel-container .carousel-caption p {
       letter-spacing: 0.5em; }
+  @media (max-width: 576px) {
+    #about-page .col-sm-6, #about-page .col-sm-5, #about-page .col-sm-7, #about-page .col-sm-8, #about-page .col-sm-4 {
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 1em; } }
+  #about-page .card {
+    background: #1e1e2f;
+    color: white; }
+    #about-page .card .card-header {
+      background: #9e2438;
+      letter-spacing: 0.25em;
+      text-transform: lowercase; }
+    #about-page .card .card-title {
+      font-family: 'Luckiest Guy', sans-serif; }
   #about-page .bbop-card .about-cards-title {
     color: white;
     font-size: 2em;
