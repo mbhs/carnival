@@ -1,5 +1,5 @@
 #about-page {
-    background-color: rgba(56,137,216,0.20);
+    background-color: rgba(8, 86, 162,0.20);
     padding-top: 2.75em;
     padding-bottom: 2em;
     .carousel-container {
@@ -7,13 +7,15 @@
         max-height: 1vh;
         padding-bottom: 56.25%;
         background: rgb(20,20,47);
-        font-family: 'Luckiest Guy', sans-serif;
+
         .carousel-caption h3 {
+            font-family: 'Luckiest Guy', sans-serif;
             letter-spacing: 0.5em;
             color: rgb(159,210,255);
         }
         .carousel-caption p {
-
+            font-weight: bold;
+            font-size: 1.5em;
         }
         #photo-carousel {
             .carousel-inner {
@@ -32,11 +34,11 @@
     }
 
     .card {
-        background: rgb(30,30,47);
+        background: rgb(20,20,47);
         //border: 1px solid white;
         color: white;
         .card-header {
-            background: rgb(56,137,216);
+            background: rgb(250, 81, 0);
             text-transform: lowercase;
             font-weight: 200;
         }

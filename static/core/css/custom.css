@@ -94,7 +94,7 @@ html, body {
         border-top: 5px solid white;
         color: white !important; }
   .navbar:hover {
-    background: #e34946; }
+    background: #fa5100; }
     .navbar:hover .nav-link {
       padding-top: 3em; }
   @media (min-width: 992px) {
@@ -770,7 +770,7 @@ body {
     background-color: grey; }
 
 #about-page {
-  background-color: rgba(56, 137, 216, 0.2);
+  background-color: rgba(8, 86, 162, 0.2);
   padding-top: 2.75em;
   padding-bottom: 2em; }
   #about-page .carousel-container {
@@ -778,21 +778,24 @@ body {
     max-height: 1vh;
     padding-bottom: 56.25%;
     background: #14142f;
-    font-family: 'Luckiest Guy', sans-serif;
     margin-bottom: 2em; }
     #about-page .carousel-container .carousel-caption h3 {
+      font-family: 'Luckiest Guy', sans-serif;
       letter-spacing: 0.5em;
       color: #9fd2ff; }
+    #about-page .carousel-container .carousel-caption p {
+      font-weight: bold;
+      font-size: 1.5em; }
   @media (max-width: 576px) {
     #about-page .col-sm-6, #about-page .col-sm-5, #about-page .col-sm-7, #about-page .col-sm-8, #about-page .col-sm-4 {
       padding-left: 0;
       padding-right: 0;
       margin-bottom: 1em; } }
   #about-page .card {
-    background: #1e1e2f;
+    background: #14142f;
     color: white; }
     #about-page .card .card-header {
-      background: #3889d8;
+      background: #fa5100;
       text-transform: lowercase;
       font-weight: 200; }
     #about-page .card .card-title {
