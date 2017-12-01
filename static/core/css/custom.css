@@ -71,7 +71,8 @@ html, body {
       margin-bottom: 0.5em; }
   .contact-modal .modal-content .fa {
     color: black;
-    margin: 0.5em; }
+    margin: 0.5em;
+    margin-bottom: 1.5em; }
 
 .navbar {
   background: #14142f;
