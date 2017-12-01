@@ -1,19 +1,33 @@
 #about-page {
-    //padding-top: 2.75em;
+    padding-top: 2.75em;
     background: rgb(20,21,22);
 
     .carousel-container {
         width: 100%;
         max-height: 1vh;
         padding-bottom: 56.25%;
-        background:gold;
+        background: rgba(158,36,56,1);
         font-family: 'Luckiest Guy', sans-serif;
-
+        .carousel-caption h3 {
+            letter-spacing: 0.5em;
+        }
+        .carousel-caption p {
+            letter-spacing: 0.5em;
+        }
         #photo-carousel {
             .carousel-inner {
 
             }
-
         }
+
+    }
+
+    .about-cards {
+        .about-cards-title {
+            color: white;
+            font-size: 2em;
+            font-family: 'Luckiest Guy', sans-serif;
+        }
+
     }
 }
