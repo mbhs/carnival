@@ -28,11 +28,12 @@
     }
 
     &:hover {
-        background: rgb(250, 81, 0);
+        background: rgb(255,106,0);
         .nav-item {
-
+            color: rgb(155, 64, 0) !important;
         }
         .nav-link {
+            color: rgb(155, 64, 0) !important;
             padding-top:3em;
         }
     }
