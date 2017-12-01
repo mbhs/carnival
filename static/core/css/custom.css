@@ -88,7 +88,7 @@ html, body {
         margin-right: 1.5em;
         transition: all 0.25s;
         border-top: 5px solid transparent;
-        color: #9fd2ff !important;
+        color: #9fd2ff;
         padding-bottom: 10px; }
       .navbar .navbar-nav .nav-item .active {
         transition: all 0.25s;
@@ -96,10 +96,8 @@ html, body {
         color: white !important; }
   .navbar:hover {
     background: #ff6a00; }
-    .navbar:hover .nav-item {
-      color: #9b4000 !important; }
     .navbar:hover .nav-link {
-      color: #9b4000 !important;
+      color: black !important;
       padding-top: 3em; }
   @media (min-width: 992px) {
     .navbar .nav-item:hover .nav-link {
