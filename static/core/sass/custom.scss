@@ -74,7 +74,7 @@ html, body { overflow-x: hidden; }
 
 //MODAL
 .ticket-modal .modal-content {
-    background-color: rgb(20,21,22);
+    background-color: rgb(20,20,47);
     color: white;
     line-height: 1em;
     font-family: 'Luckiest Guy', sans-serif;
@@ -88,6 +88,12 @@ html, body { overflow-x: hidden; }
             cursor: pointer;
         }
     }
+    p, ul {color:rgb(159,210,255);}
+    .enlarge {
+        color: rgb(159,210,255);
+        font-size: 2em;
+        line-height: 1em;
+    }
 
     .modal-body > .img-responsive {
         display: block;
@@ -96,6 +102,11 @@ html, body { overflow-x: hidden; }
         width: 10em;
         height: 5em;
         margin-bottom: 1.5em;
+    }
+
+    .btn {
+        color: rgb(159,210,255);
+        font-size: 1.5em;
     }
 
     li {
