@@ -63,7 +63,7 @@
             opacity: 1;
           }
           60% {
-            box-shadow: 0px 0px 0px 60px $animation-color-rgba;
+            box-shadow: 0 0 0 60px $animation-color-rgba;
             opacity: 0;
           }
           100% {
@@ -107,7 +107,7 @@ body {
             color:rgb(159,210,255);
         }
     }
-    @include section-button(#fff, rbga(255,0,0,0.1));
+    @include section-button(#fff, rgba(255,0,0,0.1));
     .animate, .animate-2 {
         visibility: hidden;
     }
@@ -225,7 +225,7 @@ body {
         }
 
     }
-    @include section-button(#000, rbga(255,255,255,0.1));
+    @include section-button(#000, rgba(255,255,255,0.1));
 }
 
 #schedule-container {
@@ -355,14 +355,14 @@ body {
             padding-bottom: 4em;
         }
     }
-    @include section-button(#fff, rbga(255,255,255,0.1));
+    @include section-button(#fff, rgba(255,255,255,0.1));
 }
 
 #sponsors-container {
     @include section-height(auto);
     position: relative;
     min-height: 50vh !important;
-    background: rbga(20,21,22,1);
+    background: rgba(20,21,22,1);
 
     .sponsors {
         text-align: center;
@@ -414,7 +414,10 @@ body {
 
         }
     }
-    @include section-button(#000, rbga(0,0,0,0.1));
+    a:hover {
+        text-decoration: none;
+    }
+    @include section-button(#000, rgba(0,0,0,0.1));
 }
 
 #map-container {
