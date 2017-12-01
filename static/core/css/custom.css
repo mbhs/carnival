@@ -20,13 +20,14 @@ html, body {
   html {
     font-size: calc(16px + (24 - 16) * (100vw - 992px)/(1920 - 992)); } }
 .ticket-modal .modal-content {
-  background-color: #9fd2ff;
-  color: black;
+  background-color: #14142f;
+  color: white;
   line-height: 1em;
   font-family: 'Luckiest Guy', sans-serif; }
   .ticket-modal .modal-content .close {
     font-family: 'Open Sans', sans-serif;
-    opacity: 0.75; }
+    opacity: 0.75;
+    color: white; }
     .ticket-modal .modal-content .close:hover {
       opacity: 1;
       cursor: pointer; }
@@ -87,15 +88,16 @@ html, body {
         margin-right: 1.5em;
         transition: all 0.25s;
         border-top: 5px solid transparent;
-        color: #9fd2ff !important;
+        color: #9fd2ff;
         padding-bottom: 10px; }
       .navbar .navbar-nav .nav-item .active {
         transition: all 0.25s;
         border-top: 5px solid white;
         color: white !important; }
   .navbar:hover {
-    background: #fa5100; }
+    background: #ff6a00; }
     .navbar:hover .nav-link {
+      color: black !important;
       padding-top: 3em; }
   @media (min-width: 992px) {
     .navbar .nav-item:hover .nav-link {
@@ -625,7 +627,7 @@ body {
   height: auto;
   position: relative;
   min-height: 50vh !important;
-  background: rgba(20, 21, 22, 1); }
+  background: #141516; }
   #sponsors-container .sponsors {
     text-align: center;
     background-color: #9fd2ff;
@@ -634,13 +636,12 @@ body {
     width: 100%;
     position: relative;
     padding-top: 3em;
+    padding-bottom: 2em;
     vertical-align: middle; }
     #sponsors-container .sponsors .sponsors-title {
       font-family: 'Luckiest Guy', cursive;
       font-size: 1.5em;
       margin-bottom: 1em; }
-    #sponsors-container .sponsors a:hover {
-      text-decoration: none; }
     @media (min-width: 576px) {
       #sponsors-container .sponsors .sponsors-title {
         font-family: 'Luckiest Guy', cursive;
@@ -662,6 +663,8 @@ body {
         #sponsors-container .sponsors .content .row img {
           max-width: 12vw;
           max-height: 12vh; } }
+  #sponsors-container a:hover {
+    text-decoration: none; }
   #sponsors-container .section-btn, #sponsors-container .section-btn::after, #sponsors-container .section-btn::before {
     visibility: hidden; }
   @media (min-width: 768px) {
@@ -778,7 +781,7 @@ body {
     width: 100%;
     max-height: 1vh;
     padding-bottom: 56.25%;
-    background: #14142f;
+    background: #ff6a00;
     margin-bottom: 2em; }
     #about-page .carousel-container .carousel-caption h3 {
       font-family: 'Luckiest Guy', sans-serif;

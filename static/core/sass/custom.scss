@@ -74,14 +74,15 @@ html, body { overflow-x: hidden; }
 
 //MODAL-TICKET
 .ticket-modal .modal-content {
-    background-color: rgb(159,210,255);
-    color: black;
+    background-color: rgb(20,20,47);
+    color: white;
     line-height: 1em;
     font-family: 'Luckiest Guy', sans-serif;
 
     .close {
         font-family: 'Open Sans', sans-serif;
         opacity: 0.75;
+        color:white;
         &:hover{
             opacity: 1;
             cursor: pointer;
