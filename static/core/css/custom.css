@@ -783,8 +783,6 @@ body {
     #about-page .carousel-container .carousel-caption h3 {
       letter-spacing: 0.5em;
       color: #9fd2ff; }
-    #about-page .carousel-container .carousel-caption p {
-      letter-spacing: 0.5em; }
   @media (max-width: 576px) {
     #about-page .col-sm-6, #about-page .col-sm-5, #about-page .col-sm-7, #about-page .col-sm-8, #about-page .col-sm-4 {
       padding-left: 0;
