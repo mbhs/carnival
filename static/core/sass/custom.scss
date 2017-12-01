@@ -72,25 +72,23 @@ html, body { overflow-x: hidden; }
     }
 }
 
-//MODAL
+//MODAL-TICKET
 .ticket-modal .modal-content {
-    background-color: rgb(20,20,47);
-    color: white;
+    background-color: rgb(159,210,255);
+    color: black;
     line-height: 1em;
     font-family: 'Luckiest Guy', sans-serif;
 
     .close {
         font-family: 'Open Sans', sans-serif;
-        color: white;
         opacity: 0.75;
         &:hover{
             opacity: 1;
             cursor: pointer;
         }
     }
-    p, ul {color:rgb(159,210,255);}
+    p, ul {}
     .enlarge {
-        color: rgb(159,210,255);
         font-size: 2em;
         line-height: 1em;
     }
@@ -105,7 +103,6 @@ html, body { overflow-x: hidden; }
     }
 
     .btn {
-        color: rgb(159,210,255);
         font-size: 1.5em;
     }
 
@@ -114,11 +111,15 @@ html, body { overflow-x: hidden; }
     }
     li:before {
     	content: '\00a0\2022\00a0\00a0';
-    	color:rgba(255,255,255,1);
     }
     li:first-child:before {
     	content: '';
     }
+}
+
+//MODAL-CONTACT
+.contact-modal .modal-content {
+
 }
 
 //NAVBAR

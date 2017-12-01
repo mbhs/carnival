@@ -28,7 +28,7 @@
                     <li class="nav-item"><a class="nav-link {% if navbar == 'home' %} active {% endif %}" href="{% url 'index' %}">Home</a></li> <!--Use {% ifequal request.path 'URLPATH'%} active {% endifequal%} for Django -->
                     <li class="nav-item"><a class="nav-link" href="ticket-modal" data-toggle="modal" data-target="#ticket-modal">Tickets</a></li>
                     <li class="nav-item"><a class="nav-link {% if navbar == 'about' %} active {% endif %}" href="{% url 'about' %}">About</a></li>
-                    <li class="nav-item"><a class="nav-link {% if navbar == 'contact' %} active {% endif %}" href="{% url 'contact' %}">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact-modal" data-toggle="modal" data-target="#contact-modal">Contact</a></li>
                     <li class="nav-item espanol"><a class="nav-link" href="{% url 'espanol' %}">Espanol</a></li>
                 </ul>
             </div>
@@ -36,6 +36,7 @@
     </nav>
 
     {% include 'core/includes/base-ticket-modal.html' %}
+    {% include 'core/includes/base-contact-modal.html' %}
 
     {% block content %}
     {% endblock %}
