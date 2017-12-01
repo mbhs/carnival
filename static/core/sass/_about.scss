@@ -1,11 +1,12 @@
 #about-page {
+    background-color: rgba(56,137,216,0.20);
     padding-top: 2.75em;
-
+    padding-bottom: 2em;
     .carousel-container {
         width: 100%;
         max-height: 1vh;
         padding-bottom: 56.25%;
-        background: rgba(158,36,56,1);
+        background: rgb(20,20,47);
         font-family: 'Luckiest Guy', sans-serif;
         .carousel-caption h3 {
             letter-spacing: 0.5em;
@@ -35,15 +36,20 @@
         //border: 1px solid white;
         color: white;
         .card-header {
-            background: rgb(158,36,56);
-            letter-spacing: 0.25em;
+            background: rgb(56,137,216);
             text-transform: lowercase;
+            font-weight: 200;
         }
         .card-title {
             font-family: 'Luckiest Guy', sans-serif;
         }
         .card-text {
             color:rgb(210,210,210);
+        }
+
+        #cello-img {
+            width: 4.5em;
+            height:10em;
         }
     }
 

@@ -1,6 +1,6 @@
 
 .navbar {
-    background: rgba(158,36,56,1);
+    background: rgb(20,20,47);
     transition: all 0.5s;
     padding-top: 0;
     .navbar-nav {
@@ -16,7 +16,7 @@
                 margin-right: 1.5em;
                 transition: all 0.25s;
                 border-top: 5px solid transparent;
-                color: rgb(255,255,255) !important;
+                color: rgb(159,210,255) !important;
                 padding-bottom: 10px;
             }
             .active {
@@ -38,7 +38,6 @@
     }
 
     @include media-breakpoint-lg() {
-        background: rgba(158,36,56,1);
         .nav-item {
 
         }

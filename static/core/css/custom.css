@@ -73,7 +73,7 @@ html, body {
     margin: 0.5em; }
 
 .navbar {
-  background: #9e2438;
+  background: #14142f;
   transition: all 0.5s;
   padding-top: 0; }
   .navbar .navbar-nav {
@@ -87,7 +87,7 @@ html, body {
         margin-right: 1.5em;
         transition: all 0.25s;
         border-top: 5px solid transparent;
-        color: white !important;
+        color: #9fd2ff !important;
         padding-bottom: 10px; }
       .navbar .navbar-nav .nav-item .active {
         transition: all 0.25s;
@@ -98,14 +98,12 @@ html, body {
     .navbar:hover .nav-link {
       padding-top: 3em; }
   @media (min-width: 992px) {
-    .navbar {
-      background: #9e2438; }
-      .navbar .nav-item:hover .nav-link {
-        border-top: 5px solid white; }
-      .navbar .espanol {
-        position: absolute;
-        top: 0;
-        right: 0; } }
+    .navbar .nav-item:hover .nav-link {
+      border-top: 5px solid white; }
+    .navbar .espanol {
+      position: absolute;
+      top: 0;
+      right: 0; } }
 
 section {
   position: relative;
@@ -772,12 +770,14 @@ body {
     background-color: grey; }
 
 #about-page {
-  padding-top: 2.75em; }
+  background-color: rgba(56, 137, 216, 0.2);
+  padding-top: 2.75em;
+  padding-bottom: 2em; }
   #about-page .carousel-container {
     width: 100%;
     max-height: 1vh;
     padding-bottom: 56.25%;
-    background: #9e2438;
+    background: #14142f;
     font-family: 'Luckiest Guy', sans-serif;
     margin-bottom: 2em; }
     #about-page .carousel-container .carousel-caption h3 {
@@ -792,13 +792,16 @@ body {
     background: #1e1e2f;
     color: white; }
     #about-page .card .card-header {
-      background: #9e2438;
-      letter-spacing: 0.25em;
-      text-transform: lowercase; }
+      background: #3889d8;
+      text-transform: lowercase;
+      font-weight: 200; }
     #about-page .card .card-title {
       font-family: 'Luckiest Guy', sans-serif; }
     #about-page .card .card-text {
       color: #d2d2d2; }
+    #about-page .card #cello-img {
+      width: 4.5em;
+      height: 10em; }
   #about-page .bbop-card .about-cards-title {
     color: black;
     font-size: 2em;
