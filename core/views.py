@@ -17,4 +17,7 @@ def about(request):
 
 
 def espanol(request):
-    return FileResponse(open('static/espanol.pdf', 'rb'), content_type='application/pdf')
+    context = {
+        'navbar': 'espanol'
+    }
+    return render(request, 'core/espanol.html', context)
