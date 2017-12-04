@@ -9,6 +9,9 @@ body {
     margin: 0;
 }
 html, body { overflow-x: hidden; }
+.embed-responsive-210by297 {
+  padding-bottom: 141.42%;
+}
 @mixin media-breakpoint-sm {
     @media (min-width: 576px) {
         @content;
