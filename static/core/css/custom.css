@@ -779,6 +779,7 @@ body {
     background-color: grey; }
 
 #about-page {
+  line-height: 1.6em;
   padding-top: 2.75em;
   padding-bottom: 2em; }
   #about-page .carousel-container {
