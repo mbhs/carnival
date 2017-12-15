@@ -83,64 +83,67 @@
             font-family: 'Luckiest Guy', sans-serif;
         }
         .bbop-card-card {
-            background-color: #100836;
+            background-color: #A52814;
             .card-text {
-                color: #FFECDB;
+                color: #FFFFFF;
+            }
+            .card-header {
+                background-color: #4C136E;
             }
         }
     }
     .instrument-card {
-        background-color: #47682D;
+        background-color: #3D0B5B;
         .card-text {
-            color: #FFFACD;
+            color: #FFFFFF;
         }
     }
     .carnival-card {
-        background-color: #2F2951;
+        background-color: #6B1F98;
         .card-text {
             color: #DCC6E0;
         }
     }
     .carnival-blurb-card {
-        background-color: #F53B63;
+        background-color: #2B0442;
         .card-text {
-            color: #2B0000;
+            color: #E4F1FE;
         }
     }
     .arts-crafts-card {
-        background-color: #FFD72D;
-        .card-text {
-            color: #2A2400;
+        background-color: #C0951B;
+        .card-text, .card-header {
+            color: #FFFFFF;
         }
     }
     .face-painting-card {
-        background-color: #F53B63;
+        background-color: #E4B223;
         .card-text {
-            color: #2B0000;
+            color: #FFFFFF;
         }
     }
     .cupcake-walk-card {
-        background-color: #302951;
+        background-color: #886709;
         .card-text {
-            color: #DCC6E0;
+            color: #FFFFFF;
         }
     }
     .bake-sale-card {
-        background-color: #FFD72D;
+        background-color: #1AA945;
         .card-text {
-            color: #2A2400;
+            color: #FFFFFF;
         }
     }
     .raffle-card {
-        background-color: #47682D;
+        background-color: #0F7A2F;
         .card-text {
-            color: #FFFACD;
+            color: #FFFFFF;
         }
     }
     .marching-band-card {
-        background-color: #F22B56;
+        background-color: #076523;
         .card-text {
-            color: #2B0000;
+            color: #FFFFFF;
         }
     }
     .directions-card {
@@ -150,9 +153,12 @@
             font-family: 'Luckiest Guy', sans-serif;
         }
         .directions-card-card {
-            background-color: #100836;
+            background-color: #A52814;
             .card-text {
-                color: #FFECDB;
+                color: #FFFFFF;
+            }
+            .card-header {
+                background-color: #4C136E;
             }
         }
     }

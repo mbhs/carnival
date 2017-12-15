@@ -841,52 +841,56 @@ body {
     font-size: 2em;
     font-family: 'Luckiest Guy', sans-serif; }
   #about-page .bbop-card .bbop-card-card {
-    background-color: #100836; }
+    background-color: #A52814; }
     #about-page .bbop-card .bbop-card-card .card-text {
-      color: #FFECDB; }
+      color: #FFFFFF; }
+    #about-page .bbop-card .bbop-card-card .card-header {
+      background-color: #4C136E; }
   #about-page .instrument-card {
-    background-color: #47682D; }
+    background-color: #3D0B5B; }
     #about-page .instrument-card .card-text {
-      color: #FFFACD; }
+      color: #FFFFFF; }
   #about-page .carnival-card {
-    background-color: #2F2951; }
+    background-color: #6B1F98; }
     #about-page .carnival-card .card-text {
       color: #DCC6E0; }
   #about-page .carnival-blurb-card {
-    background-color: #F53B63; }
+    background-color: #2B0442; }
     #about-page .carnival-blurb-card .card-text {
-      color: #2B0000; }
+      color: #E4F1FE; }
   #about-page .arts-crafts-card {
-    background-color: #FFD72D; }
-    #about-page .arts-crafts-card .card-text {
-      color: #2A2400; }
+    background-color: #C0951B; }
+    #about-page .arts-crafts-card .card-text, #about-page .arts-crafts-card .card-header {
+      color: #FFFFFF; }
   #about-page .face-painting-card {
-    background-color: #F53B63; }
+    background-color: #E4B223; }
     #about-page .face-painting-card .card-text {
-      color: #2B0000; }
+      color: #FFFFFF; }
   #about-page .cupcake-walk-card {
-    background-color: #302951; }
+    background-color: #886709; }
     #about-page .cupcake-walk-card .card-text {
-      color: #DCC6E0; }
+      color: #FFFFFF; }
   #about-page .bake-sale-card {
-    background-color: #FFD72D; }
+    background-color: #1AA945; }
     #about-page .bake-sale-card .card-text {
-      color: #2A2400; }
+      color: #FFFFFF; }
   #about-page .raffle-card {
-    background-color: #47682D; }
+    background-color: #0F7A2F; }
     #about-page .raffle-card .card-text {
-      color: #FFFACD; }
+      color: #FFFFFF; }
   #about-page .marching-band-card {
-    background-color: #F22B56; }
+    background-color: #076523; }
     #about-page .marching-band-card .card-text {
-      color: #2B0000; }
+      color: #FFFFFF; }
   #about-page .directions-card .about-cards-title {
     color: black;
     font-size: 2em;
     font-family: 'Luckiest Guy', sans-serif; }
   #about-page .directions-card .directions-card-card {
-    background-color: #100836; }
+    background-color: #A52814; }
     #about-page .directions-card .directions-card-card .card-text {
-      color: #FFECDB; }
+      color: #FFFFFF; }
+    #about-page .directions-card .directions-card-card .card-header {
+      background-color: #4C136E; }
 
 /*# sourceMappingURL=custom.css.map */
