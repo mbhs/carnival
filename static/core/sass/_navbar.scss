@@ -4,7 +4,7 @@
     transition: all 0.5s;
     padding-top: 0;
     .navbar-nav {
-        font-size: 0.75em;
+        font-size: 0.85em;
         text-transform: uppercase;
         font-weight: 400;
 
@@ -28,12 +28,12 @@
     }
 
     &:hover {
-        background: rgb(255,106,0);
+        background: rgb(165,39,20);
         .nav-item {
 
         }
         .nav-link {
-            color: rgb(0, 0, 0) !important;
+            color: rgb(233, 233, 233) !important;
             padding-top:3em;
         }
     }

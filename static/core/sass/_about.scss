@@ -7,7 +7,7 @@
         width: 100%;
         max-height: 1vh;
         padding-bottom: 56.25%;
-        background: rgb(255,106,0);
+        background: rgb(165,39,20);
 
         .carousel-caption h3 {
             font-family: 'Luckiest Guy', sans-serif;
@@ -27,9 +27,13 @@
     }
 
     @media (max-width: 576px) {
+        .card {
+            margin-left: 10px !important;
+            margin-right: 10px !important;
+        }
         .col-sm-6, .col-sm-5, .col-sm-7, .col-sm-8, .col-sm-4 {
-            padding-left: 0;
-            padding-right: 0;
+            padding-left: 0px;
+            padding-right: 0px;
             margin-bottom: 1em;
         }
     }
@@ -39,7 +43,7 @@
         //border: 1px solid white;
         color: white;
         .card-header {
-            background: rgb(250, 81, 0);
+            background: rgb(165,39,20);
             text-transform: lowercase;
             font-weight: 200;
         }
@@ -53,7 +57,23 @@
         #cello-img {
             width: 4.5em;
             height:10em;
+            margin-right: 1em;
         }
+
+        .btn {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: block;
+            white-space: normal;
+            transition: all 0.25s;
+            &:hover {
+                color: white;
+                background-color: rgb(165,39,20);
+            }
+            color: black;
+            background-color: rgb(159,210,255);
+        }
+
     }
 
     .bbop-card {
@@ -62,6 +82,78 @@
             font-size: 2em;
             font-family: 'Luckiest Guy', sans-serif;
         }
-
+        .bbop-card-card {
+            background-color: #100836;
+            .card-text {
+                color: #FFECDB;
+            }
+        }
+    }
+    .instrument-card {
+        background-color: #47682D;
+        .card-text {
+            color: #FFFACD;
+        }
+    }
+    .carnival-card {
+        background-color: #2F2951;
+        .card-text {
+            color: #DCC6E0;
+        }
+    }
+    .carnival-blurb-card {
+        background-color: #F53B63;
+        .card-text {
+            color: #2B0000;
+        }
+    }
+    .arts-crafts-card {
+        background-color: #FFD72D;
+        .card-text {
+            color: #2A2400;
+        }
+    }
+    .face-painting-card {
+        background-color: #F53B63;
+        .card-text {
+            color: #2B0000;
+        }
+    }
+    .cupcake-walk-card {
+        background-color: #302951;
+        .card-text {
+            color: #DCC6E0;
+        }
+    }
+    .bake-sale-card {
+        background-color: #FFD72D;
+        .card-text {
+            color: #2A2400;
+        }
+    }
+    .raffle-card {
+        background-color: #47682D;
+        .card-text {
+            color: #FFFACD;
+        }
+    }
+    .marching-band-card {
+        background-color: #F22B56;
+        .card-text {
+            color: #2B0000;
+        }
+    }
+    .directions-card {
+        .about-cards-title {
+            color: black;
+            font-size: 2em;
+            font-family: 'Luckiest Guy', sans-serif;
+        }
+        .directions-card-card {
+            background-color: #100836;
+            .card-text {
+                color: #FFECDB;
+            }
+        }
     }
 }

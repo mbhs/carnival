@@ -106,6 +106,9 @@ body {
         p, a {
             color:rgb(159,210,255);
         }
+        .btn {
+            transition: all 0.25s;
+        }
     }
     @include section-button(#fff, rgba(255,0,0,0.1));
     .animate, .animate-2 {
