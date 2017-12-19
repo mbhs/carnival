@@ -1,4 +1,3 @@
-from django.http import FileResponse
 from django.shortcuts import render
 
 
@@ -21,3 +20,7 @@ def espanol(request):
         'navbar': 'espanol'
     }
     return render(request, 'core/espanol.html', context)
+
+
+def contact(request):
+    return
