@@ -15,6 +15,9 @@ html, body {
 
 .modal-open {
   padding-right: 0px !important; }
+.card {
+  border:0;
+}
 
 @media (min-width: 576px) {
   html {
@@ -98,6 +101,7 @@ html, body {
         transition: all 0.25s;
         border-top: 5px solid transparent;
         color: #9fd2ff;
+        padding-top: 1em;
         padding-bottom: 10px; }
       .navbar .navbar-nav .nav-item .active {
         transition: all 0.25s;
@@ -106,8 +110,7 @@ html, body {
   .navbar:hover {
     background: #a52714; }
     .navbar:hover .nav-link {
-      color: #e9e9e9 !important;
-      padding-top: 3em; }
+      color: #e9e9e9 !important;}
   @media (min-width: 992px) {
     .navbar .nav-item:hover .nav-link {
       border-top: 5px solid white; }
@@ -856,11 +859,11 @@ body {
   #about-page .carnival-card {
     background-color: #6B1F98; }
     #about-page .carnival-card .card-text {
-      color: #DCC6E0; }
+      color: #FFFFFF; }
   #about-page .carnival-blurb-card {
     background-color: #6B1F98; }
     #about-page .carnival-blurb-card .card-text {
-      color: #E4F1FE; }
+      color: #FFFFFF; }
   #about-page .arts-crafts-card {
     background-color: #ffce54; }
     #about-page .arts-crafts-card .card-text, #about-page .arts-crafts-card .card-title {
