@@ -820,11 +820,10 @@ body {
     background: #14142f;
     color: white; }
     #about-page .card .card-header {
-      background: #a52714;
-      text-transform: lowercase;
-      font-weight: 200; }
+      background: #a52714; }
     #about-page .card .card-title {
-      font-family: 'Luckiest Guy', sans-serif; }
+      font-family: 'Luckiest Guy', sans-serif; 
+      color: #FFFFFF; }
     #about-page .card .card-text {
       color: #d2d2d2; }
     #about-page .card #cello-img {
@@ -866,15 +865,15 @@ body {
       color: #FFFFFF; }
   #about-page .arts-crafts-card {
     background-color: #ffce54; }
-    #about-page .arts-crafts-card .card-text, #about-page .arts-crafts-card .card-title {
+    #about-page .arts-crafts-card .card-text {
       color: #000000; }
   #about-page .face-painting-card {
     background-color: #ffce54; }
-    #about-page .face-painting-card .card-text, #about-page .face-painting-card .card-title {
+    #about-page .face-painting-card .card-text {
       color: #000000; }
   #about-page .cupcake-walk-card {
     background-color: #ffce54; }
-    #about-page .cupcake-walk-card .card-text, #about-page .cupcake-walk-card .card-title {
+    #about-page .cupcake-walk-card .card-text {
       color: #000000; }
   #about-page .bake-sale-card {
     background-color: #0F7A2F; }
