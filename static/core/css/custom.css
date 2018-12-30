@@ -896,5 +896,10 @@ body {
       color: #FFFFFF; }
     #about-page .directions-card .directions-card-card .card-header {
       background-color: #A52814; }
-
+#testimonials .carousel-item {
+  height: 8em;
+}
+#testimonials p {
+  font-style: italics;
+}
 /*# sourceMappingURL=custom.css.map */
