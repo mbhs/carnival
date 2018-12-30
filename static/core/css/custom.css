@@ -59,6 +59,9 @@ html, body {
     font-family: 'Luckiest Guy';}
     .ticket-modal .modal-content .btn:hover, .ticket-modal .modal-content .btn:focus {
       color: black; }
+  .ticket-modal ul {  
+    padding-left: 0;
+  }
   .ticket-modal .modal-content li {
     display: inline; }
   .ticket-modal .modal-content li:before {
