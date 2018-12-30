@@ -33,6 +33,10 @@ html, body {
   color: white;
   line-height: 1em;
   font-family: 'Open Sans', sans-serif; }
+.ticket-modal .modal-title{
+  font-family: 'Luckiest Guy';
+  font-size: 3em;
+}
   .ticket-modal .modal-content .close {
     font-family: 'Open Sans', sans-serif;
     opacity: 0.75;
@@ -51,7 +55,8 @@ html, body {
     height: 5em;
     margin-bottom: 1.5em; }
   .ticket-modal .modal-content .btn {
-    font-size: 1.5em; }
+    font-size: 2em; 
+    font-family: 'Luckiest Guy';}
     .ticket-modal .modal-content .btn:hover, .ticket-modal .modal-content .btn:focus {
       color: black; }
   .ticket-modal .modal-content li {
