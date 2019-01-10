@@ -798,7 +798,7 @@ body {
     background-color: grey; }
 
 #about-page {
-  background-color: rgba(159, 210, 255, 0.2);
+  background-color: #2e2e6b;
   line-height: 1.6em;
   padding-top: 2.75em;
   padding-bottom: 2em; }
@@ -827,7 +827,7 @@ body {
     background: #14142f;
     color: white; }
     #about-page .card .card-header {
-      background: #a52714; }
+      background: #42a5f5; }
     #about-page .card .card-title {
       font-family: 'Luckiest Guy', sans-serif; 
       color: #FFFFFF; }
@@ -863,35 +863,35 @@ body {
     #about-page .instrument-card .card-text {
       color: #FFFFFF; }
   #about-page .carnival-card {
-    background-color: #6B1F98; }
+    background-color: #1e88e5; }
     #about-page .carnival-card .card-text {
       color: #FFFFFF; }
   #about-page .carnival-blurb-card {
-    background-color: #6B1F98; }
+    background-color: #1e88e5; }
     #about-page .carnival-blurb-card .card-text {
       color: #FFFFFF; }
   #about-page .arts-crafts-card {
-    background-color: #ffce54; }
+    background-color: #1e88e5; }
     #about-page .arts-crafts-card .card-text {
       color: #000000; }
   #about-page .face-painting-card {
-    background-color: #ffce54; }
+    background-color: #1e88e5; }
     #about-page .face-painting-card .card-text {
       color: #000000; }
   #about-page .cupcake-walk-card {
-    background-color: #ffce54; }
+    background-color: #1e88e5; }
     #about-page .cupcake-walk-card .card-text {
       color: #000000; }
   #about-page .bake-sale-card {
-    background-color: #0F7A2F; }
+    background-color: #1e88e5; }
     #about-page .bake-sale-card .card-text {
       color: #FFFFFF; }
   #about-page .raffle-card {
-    background-color: #0F7A2F; }
+    background-color: #1e88e5; }
     #about-page .raffle-card .card-text {
       color: #FFFFFF; }
   #about-page .marching-band-card {
-    background-color: #0F7A2F; }
+    background-color: #1e88e5; }
     #about-page .marching-band-card .card-text {
       color: #FFFFFF; }
   #about-page .directions-card .about-cards-title {
