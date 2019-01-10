@@ -847,19 +847,19 @@ body {
       background-color: #9fd2ff; }
       #about-page .card .btn:hover {
         color: white;
-        background-color: #a52714; }
+        background-color: #42a5f5; }
   #about-page .bbop-card .about-cards-title {
     color: black;
     font-size: 2em;
     font-family: 'Luckiest Guy', sans-serif; }
   #about-page .bbop-card .bbop-card-card {
-    background-color: #4C136E; }
+    background-color: #1e88e5; }
     #about-page .bbop-card .bbop-card-card .card-text {
       color: #FFFFFF; }
     #about-page .bbop-card .bbop-card-card .card-header {
-      background-color: #A52814; }
+      background-color: #42a5f5; }
   #about-page .instrument-card {
-    background-color: #6B1F98; }
+    background-color: #1e88e5; }
     #about-page .instrument-card .card-text {
       color: #FFFFFF; }
   #about-page .carnival-card {
@@ -895,15 +895,15 @@ body {
     #about-page .marching-band-card .card-text {
       color: #FFFFFF; }
   #about-page .directions-card .about-cards-title {
-    color: black;
+    color: white;
     font-size: 2em;
     font-family: 'Luckiest Guy', sans-serif; }
   #about-page .directions-card .directions-card-card {
-    background-color: #4C136E; }
+    background-color: #1e88e5; }
     #about-page .directions-card .directions-card-card .card-text {
       color: #FFFFFF; }
     #about-page .directions-card .directions-card-card .card-header {
-      background-color: #A52814; }
+      background-color: #42a5f5; }
 #testimonials .carousel-item {
   height: 8em;
 }
