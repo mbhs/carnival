@@ -827,7 +827,8 @@ body {
     #about-page .card .card-header {
       background: #42a5f5; }
     #about-page .card .card-title {
-      font-family: 'Luckiest Guy', sans-serif; 
+      font-family: 'Open Sans', sans-serif; 
+      font-weight: bold;
       color: #FFFFFF; }
     #about-page .card .card-text {
       color: #d2d2d2; }
