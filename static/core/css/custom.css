@@ -843,11 +843,12 @@ body {
       display: block;
       white-space: normal;
       transition: all 0.25s;
-      color: black;
-      background-color: #9fd2ff; }
+      color: white;
+      background-color: #42a5f5;
+      }
       #about-page .card .btn:hover {
-        color: white;
-        background-color: #42a5f5; }
+        color: black;
+        background-color: #9fd2ff; }
   #about-page .bbop-card .about-cards-title {
     color: white;
     font-size: 2em;
@@ -873,15 +874,15 @@ body {
   #about-page .arts-crafts-card {
     background-color: #1e88e5; }
     #about-page .arts-crafts-card .card-text {
-      color: #000000; }
+      color: #FFFFFF; }
   #about-page .face-painting-card {
     background-color: #1e88e5; }
     #about-page .face-painting-card .card-text {
-      color: #000000; }
+      color: #FFFFFF; }
   #about-page .cupcake-walk-card {
     background-color: #1e88e5; }
     #about-page .cupcake-walk-card .card-text {
-      color: #000000; }
+      color: #FFFFFF; }
   #about-page .bake-sale-card {
     background-color: #1e88e5; }
     #about-page .bake-sale-card .card-text {
