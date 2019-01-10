@@ -798,7 +798,6 @@ body {
     background-color: grey; }
 
 #about-page {
-  background-color: #2e2e6b;
   line-height: 1.6em;
   padding-top: 2.75em;
   padding-bottom: 2em; }
@@ -847,8 +846,7 @@ body {
       background-color: #42a5f5;
       }
       #about-page .card .btn:hover {
-        color: black;
-        background-color: #9fd2ff; }
+        background-color: #64b5f6; }
   #about-page .bbop-card .about-cards-title {
     color: white;
     font-size: 2em;
