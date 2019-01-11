@@ -157,8 +157,17 @@ body {
     #cover-container .cover p, #cover-container .cover a {
       color: #9fd2ff; }
     #cover-container .cover .btn {
-      transition: all 0.25s; }
-      #cover-container .cover .btn:hover {
+      transition: all 0.25s; 
+      margin: 1em;
+      }
+      #cover-container .cover .btn-solid{
+        color: white;
+      background-color: #42a5f5;
+      }
+      #cover-container .cover .btn-solid:hover{
+        background-color: #64b5f6;
+      }
+      #cover-container .cover .btn-outline-light:hover {
         color: black; }
   #cover-container .section-btn, #cover-container .section-btn::after, #cover-container .section-btn::before {
     visibility: hidden; }
