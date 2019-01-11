@@ -305,7 +305,7 @@ body {
     visibility: hidden; }
   #about-container .violin-svg {
     position: absolute;
-    top: 25%;
+    top: 35%;
     right: 75%;
     width: 10em;
     margin: 3em;
@@ -327,7 +327,7 @@ body {
     margin: auto;
     height: 1%;
     width: 75%;
-    padding-top: 5em;
+    padding-top: 0em;
     text-align: center; }
     @media (min-width: 992px) {
       #about-container .about {
@@ -337,7 +337,8 @@ body {
       font-size: .9em; }
     #about-container .about .about-title {
       font-family: 'Luckiest Guy', cursive;
-      font-size: 1.5em; }
+      font-size: 1.5em; 
+      margin-top: 1.5em;}
     #about-container .about p {
       font-family: 'Open Sans', sans-serif;
       font-size: 1em; }
