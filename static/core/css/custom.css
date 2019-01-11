@@ -273,7 +273,7 @@ body {
   @media (min-width: 992px) {
     #cover-container .animate {
       position: absolute;
-      top: 55px;
+      top: 105px;
       right: 0;
       visibility: visible;
       height: 12em;
