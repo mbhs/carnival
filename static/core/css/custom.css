@@ -829,7 +829,7 @@ body {
     #about-page .card {
       margin-left: 10px !important;
       margin-right: 10px !important; }
-    #about-page .col-sm-6, #about-page .col-sm-5, #about-page .col-sm-7, #about-page .col-sm-8, #about-page .col-sm-4 {
+    #about-page .col-sm-6, #about-page .col-sm-5, #about-page .col-sm-7, #about-page .col-sm-8, #about-page .col-sm-4, #about-page .col-sm-12 {
       padding-left: 0px;
       padding-right: 0px;
       margin-bottom: 1em; } }
@@ -859,7 +859,7 @@ body {
       }
       #about-page .card .btn:hover {
         background-color: #64b5f6; }
-  #about-page .bbop-card .about-cards-title {
+  #about-page .about-cards-title {
     color: white;
     font-size: 2em;
     font-family: 'Luckiest Guy', sans-serif; }
