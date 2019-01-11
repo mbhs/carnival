@@ -43,4 +43,11 @@
     {% block content %}
     {% endblock %}
     <script src="{% static 'core/js/scroll.js' %}"></script>
+<script>$(window).scroll(function() {
+    if ($(window).scrollTop() > 40) {
+        $('.navbar').addClass('shadow-sm');
+    } else {
+        $('.navbar').removeClass('shadow-sm');
+    }
+});</script>
 {% endblock %}
