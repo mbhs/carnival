@@ -320,9 +320,6 @@ body {
     height: 12em;
     margin: 3em;
     visibility: hidden; }
-  @media (min-width: 768px) {
-    #about-container .trumpet-svg, #about-container .violin-svg, #about-container .sax-svg {
-      visibility: visible; } }
   #about-container .about {
     display: flex;
     flex-direction: column;
@@ -333,7 +330,9 @@ body {
     text-align: center; }
     @media (min-width: 992px) {
       #about-container .about {
-        width: 50%; } }
+        width: 50%; }
+      #about-container .trumpet-svg, #about-container .violin-svg, #about-container .sax-svg {
+      visibility: visible; } }
     #about-container .about .about-lead {
       font-family: 'Open Sans', sans-serif;
       font-size: .9em; }
