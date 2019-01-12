@@ -142,7 +142,7 @@ body {
   background-color: #14142f;
   text-align: center; }
   #cover-container .cover {
-    margin-top: 2em;
+    margin-top: 1em;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -220,6 +220,28 @@ body {
     -o-animation: sdb03 3s infinite;
     animation: sdb03 3s infinite;
     box-sizing: border-box; }
+.top-separator {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: -50px;
+    z-index: 10;
+}
+.arrow {
+position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+    top: 2vh;
+    width: 16px;
+    height: 16px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    z-index: 100;
+}
 @-webkit-keyframes sdb03 {
   0% {
     opacity: 0; }
