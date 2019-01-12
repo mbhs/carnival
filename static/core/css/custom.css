@@ -503,7 +503,7 @@ body {
     text-align: center; }
     @media (min-width: 992px) {
       #schedule-container .schedule {
-        width: 50%; } }
+        width: 75%; } }
     #schedule-container .schedule .schedule-lead {
       font-family: 'Open Sans', sans-serif;
       font-size: .9em; }
@@ -519,14 +519,17 @@ body {
       color: #9fd2ff; }
     #schedule-container .schedule .time-header {
       font-family: 'Luckiest Guy', cursive;
-      font-size: 1.25em;
+      font-size: 2em;
+      padding-top: .3em;
+      height: 3em;
       color: #d2d2d2; }
     #schedule-container .schedule .time-description {
       display: inline-block;
       width: 75%;
       font-family: 'Open Sans', sans-serif;
-      font-size: .9em;
-      margin-bottom: 2em;
+      font-size: 1em;
+      margin-bottom: 1em;
+      line-height: 2em;
       color: #9fd2ff; }
     @media (min-width: 576px) {
       #schedule-container .schedule .schedule-lead {
