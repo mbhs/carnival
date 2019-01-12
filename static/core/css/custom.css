@@ -338,7 +338,7 @@ body {
       font-size: .9em; }
     #about-container .about .about-title {
       font-family: 'Luckiest Guy', cursive;
-      font-size: 1.5em; 
+      font-size: 1.75em; 
       margin-top: 1.5em;}
     #about-container .about p {
       font-family: 'Open Sans', sans-serif;
@@ -349,14 +349,14 @@ body {
         font-size: 1.25em; }
       #about-container .about .about-title {
         font-family: 'Luckiest Guy', cursive;
-        font-size: 1.75em; } }
+        font-size: 2em; } }
     @media (min-width: 768px) {
       #about-container .about .about-lead {
         font-family: 'Open Sans', sans-serif;
         font-size: 1.5em; }
       #about-container .about .about-title {
         font-family: 'Luckiest Guy', cursive;
-        font-size: 2em; } }
+        font-size: 2.25em; } }
   #about-container .section-btn, #about-container .section-btn::after, #about-container .section-btn::before {
     visibility: hidden; }
   @media (min-width: 768px) {
@@ -682,16 +682,16 @@ body {
     vertical-align: middle; }
     #sponsors-container .sponsors .sponsors-title {
       font-family: 'Luckiest Guy', cursive;
-      font-size: 1.5em;
+      font-size: 2.25em;
       margin-bottom: 1em; }
     @media (min-width: 576px) {
       #sponsors-container .sponsors .sponsors-title {
         font-family: 'Luckiest Guy', cursive;
-        font-size: 1.75em; } }
+        font-size: 2.5em; } }
     @media (min-width: 768px) {
       #sponsors-container .sponsors .sponsors-title {
         font-family: 'Luckiest Guy', cursive;
-        font-size: 2em; } }
+        font-size: 2.75em; } }
     #sponsors-container .sponsors .content {
       display: table;
       height: auto;
