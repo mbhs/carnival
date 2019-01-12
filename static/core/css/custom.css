@@ -151,7 +151,8 @@ body {
     #cover-container .cover .cover-lead {
       font-family: 'Open Sans', sans-serif;
       font-size: 1.5em;
-      color: #9fd2ff; }
+      color: #9fd2ff; 
+      margin-bottom: 1rem;}
     #cover-container .cover .cover-title {
       font-family: 'Luckiest Guy', cursive;
       font-size: 3em; }
