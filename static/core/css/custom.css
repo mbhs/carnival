@@ -137,17 +137,16 @@ body {
   background-attachment: fixed; }
 
 #cover-container {
-  height: 98vh;
+  min-height: 90vh;
   color: white;
   background-color: #14142f;
   text-align: center; }
   #cover-container .cover {
-    margin-top: 2vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
+    padding-top: 2em;
+    padding-bottom: 70px;
+    position: relative;
+    text-align: center;
+    }
     #cover-container .cover .cover-lead {
       font-family: 'Open Sans', sans-serif;
       font-size: 1.5em;
@@ -238,7 +237,7 @@ position: absolute;
     -webkit-transform: translateX(-50%) rotate(45deg);
     -ms-transform: translateX(-50%) rotate(45deg);
     transform: translateX(-50%) rotate(45deg);
-    top: 2vh;
+    top: 12px;
     width: 16px;
     height: 16px;
     border-right: 2px solid #fff;
