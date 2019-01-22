@@ -865,11 +865,11 @@ position: absolute;
 #about-page .carousel-inner {
     max-height: 80vh;
 }
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     #about-page .card {
       margin-left: 10px !important;
       margin-right: 10px !important; }
-    #about-page .col-sm-6, #about-page .col-sm-5, #about-page .col-sm-7, #about-page .col-sm-8, #about-page .col-sm-4, #about-page .col-sm-12 {
+    #about-page .container > .row > div {
       padding-left: 0px;
       padding-right: 0px;
       margin-bottom: 1em; } }
