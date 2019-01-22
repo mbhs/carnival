@@ -485,6 +485,19 @@ position: absolute;
   color: white;
   background: url("../img/background/orchestra.jpg") no-repeat;
   background-size: cover; }
+#schedule-container {
+  height: auto;
+  position: relative;
+  min-height: 95vh !important;
+  color: white;
+  background-color: #14142f;
+  }
+@media (min-width: 576px) {
+  #schedule-container {
+    background: url("../img/background/orchestra.jpg") no-repeat;
+    background-size: cover;
+  }
+}
   #schedule-container .trumpet-svg {
     position: absolute;
     z-index: 0;
