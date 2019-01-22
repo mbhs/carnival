@@ -326,14 +326,14 @@ position: absolute;
     width: 12em;
     height: 12em;
     margin: 3em;
-    visibility: hidden; }
+    display: none; }
   #about-container .violin-svg {
     position: absolute;
     top: 35%;
     right: 75%;
     width: 10em;
     margin: 3em;
-    visibility: hidden; }
+    display: none; }
   #about-container .sax-svg {
     position: absolute;
     top: 55%;
@@ -341,7 +341,7 @@ position: absolute;
     width: 12em;
     height: 12em;
     margin: 3em;
-    visibility: hidden; }
+    display: none; }
   #about-container .about {
     display: flex;
     flex-direction: column;
