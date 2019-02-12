@@ -8,20 +8,14 @@
     <script src="{% static 'core/js/aos.js' %}"></script>
     <script defer src="{% static 'core/js/scroll.js' %}"></script>
     <link href="{% static 'core/css/aos.css' %}" rel="stylesheet">
-    <script>
-        AOS.init({
-          duration: 1000,
-        })
-    </script>
+    <script>AOS.init({duration: 1000,})</script>
     <link rel="shortcut icon" type="image/png" href="{% static 'note.ico' %}"/>
 {% endblock %}
-
 {% block body %}
     <nav class="navbar navbar-expand-md navbar-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="navbar-toggler-icon"></span>
         </button> <!-- /.navbar-toggler -->
-
         <div class="collapse navbar-collapse">
             <div class="mx-auto">
                 <ul class="navbar-nav">
@@ -34,10 +28,8 @@
             </div>
         </div> <!-- /.navbar-collapse -->
     </nav>
-
     {% include 'core/includes/base-ticket-modal.html' %}
     {% include 'core/includes/base-contact-modal.html' %}
-
     {% block content %}
     {% endblock %}
 {% endblock %}
