@@ -1,23 +1,8 @@
 {% extends "core/base.html" %}
 {% load static %}
 {% block content %}
-<script>
-    AOS.init({
-      duration: 1400,
-    })
-</script>
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [{
-    "@type": "ListItem",
-    "position": 1,
-    "name": "Home",
-    "item": "http://carnival.mbhs.edu/"
-  }]
-}
-</script>
+<script>AOS.init({duration: 1400,})</script>
+<script type="application/ld+json">{"@context": "http://schema.org","@type": "BreadcrumbList","itemListElement": [{"@type": "ListItem","position": 1,"name": "Home","item": "http://carnival.mbhs.edu/"}]}</script>
 <section id="cover-container">
     <div class="row">
         <div class="d-none d-lg-inline col">
