@@ -32,5 +32,5 @@
     {% endblock %}
     <script>$(function(){$("a[href*='#']").on('click',function(e){e.preventDefault();$('html,body').animate({scrollTop:$($(this).attr('href')).offset().top-50},1000);});});</script>
     <script src="{% static 'core/js/aos.js' %}"></script>
-    <script>AOS.init({duration:1000,})</script>
+    <script>AOS.init({duration:1000,offset:0,})</script>
 {% endblock %}
