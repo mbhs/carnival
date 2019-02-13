@@ -6,7 +6,6 @@
     <script defer src="{% static 'core/js/popper.js' %}"></script>
     <script defer src="{% static 'core/js/bootstrap.min.js' %}"></script>
     <link rel="stylesheet" type="text/css" href="{% static 'core/css/custom.css' %}">
-    <script defer src="{% static 'core/js/scroll.js' %}"></script>
     <link href="{% static 'core/css/aos.css' %}" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="{% static 'note.ico' %}"/>
 {% endblock %}
@@ -31,6 +30,7 @@
     {% include 'core/includes/base-contact-modal.html' %}
     {% block content %}
     {% endblock %}
+    <script>$(function(){$("a[href*='#']").on('click',function(e){e.preventDefault();$('html,body').animate({scrollTop:$($(this).attr('href')).offset().top-50},500,'linear');});});</script>
     <script src="{% static 'core/js/aos.js' %}"></script>
     <script>AOS.init({duration: 1000,})</script>
 {% endblock %}
