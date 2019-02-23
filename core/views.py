@@ -24,3 +24,10 @@ def espanol(request):
 
 def contact(request):
     return
+
+
+def dayof(request):
+    context = {
+        'navbar': ''
+    }
+    return render(request, 'core/dayof.html', context)
