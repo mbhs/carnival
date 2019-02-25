@@ -26,7 +26,7 @@ with open(os.path.join(BASE_DIR, 'production.yaml')) as file:
 SECRET_KEY = config['secret']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['carnival.mbhs.edu', 'localhost']
 
@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
     'django.contrib.sites',
-    'crispy_forms',
 ]
 
 MIDDLEWARE = [
