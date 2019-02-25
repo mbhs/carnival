@@ -54,7 +54,8 @@ def dayof(request):
                 with open('token.pickle', 'wb') as token:
                     pickle.dump(creds, token)
             service = build('drive', 'v3', credentials=creds)
-            file_metadata = {'name': image.picture.name}
+            folder_id = '1dOy-chl03stjflrlu4jl6nxyWhvAZNmR'
+            file_metadata = {'name': image.picture.name,'parents': [folder_id]}
             media = MediaFileUpload(image.picture.path,mimetype='image/jpeg')
             service.files().create(body=file_metadata,media_body=media,fields='id').execute()
 

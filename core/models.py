@@ -2,4 +2,4 @@ from django.db import models
 
 # Create your models here.
 class Image(models.Model):
-    picture = models.ImageField(upload_to='uploads', blank=True)
+    picture = models.ImageField(upload_to='', blank=True)
