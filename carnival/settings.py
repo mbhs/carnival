@@ -26,7 +26,7 @@ with open(os.path.join(BASE_DIR, 'production.yaml')) as file:
 SECRET_KEY = config['secret']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['carnival.mbhs.edu', 'localhost']
 
