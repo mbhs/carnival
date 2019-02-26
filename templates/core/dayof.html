@@ -1,0 +1,16 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="container">
+<h1>Submit Photos</h1>
+
+<form enctype="multipart/form-data" action="{% url 'dayof' %}" method="post">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <p>By clicking "Submit," I give permission to Montgomery Blair Music to use this photo in any promotional materials.</p>
+    <input type="submit" value="Submit" class="btn btn-primary">
+</form>
+</div>
+{% endblock %}
