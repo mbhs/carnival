@@ -879,20 +879,20 @@ position: absolute;
     max-height: 80vh;
 }
   @media (max-width: 768px) {
-    #about-page .card {
+    #about-page .card, #dayof .card {
       margin-left: 10px !important;
       margin-right: 10px !important; }
-    #about-page .container > .row > div {
+    #about-page .container > .row > div, #dayof > .row >div {
       padding-left: 0px;
       padding-right: 0px;
       margin-bottom: 1em; } }
-  #about-page .card {
+  #about-page .card, #dayof .card {
     background: #14142f;
     color: white; }
-    #about-page .card .card-header {
+    #about-page .card .card-header, #dayof .card .card-header {
       background: #42a5f5; }
-    #about-page .card .card-title {
-      font-family: 'Open Sans', sans-serif; 
+    #about-page .card .card-title , #dayof .card .card-title{
+      font-family: 'Open Sans', sans-serif;
       font-weight: bold;
       color: #FFFFFF; }
     #about-page .card .card-text {
@@ -916,7 +916,7 @@ position: absolute;
     color: white;
     font-size: 2em;
     font-family: 'Luckiest Guy', sans-serif; }
-  #about-page .bbop-card {
+  #about-page .bbop-card, #dayof .card {
     background-color: #1e88e5; }
     #about-page .bbop-card .card-text {
       color: #FFFFFF; }
@@ -971,4 +971,22 @@ position: absolute;
   font-style: italic;
   color: #FFFFFF !important;
 }
+
+#dayof .col-form-label {
+  display: none;
+}
+#dayof .card .btn {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display: block;
+  white-space: normal;
+  transition: all 0.25s;
+  color: black;
+  background-color: #bbecfb;
+}
+#dayof .card .btn:hover{
+  background-color: #eefbff;
+}
+
+
 /*# sourceMappingURL=custom.css.map */
