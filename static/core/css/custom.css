@@ -972,7 +972,7 @@ position: absolute;
   color: #FFFFFF !important;
 }
 
-#dayof .col-form-label {
+#dayof #div_id_picture {
   display: none;
 }
 #dayof .card .btn {
@@ -986,6 +986,9 @@ position: absolute;
 }
 #dayof .card .btn:hover{
   background-color: #eefbff;
+}
+#dayof {
+  padding-top: 3em;
 }
 
 

@@ -1,3 +1,4 @@
+from django.core.files.storage import default_storage
 from django.shortcuts import render
 from googleapiclient.http import MediaFileUpload
 import pickle
@@ -5,6 +6,8 @@ import os.path
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
+
+from carnival import settings
 from .forms import ImageForm
 from .models import Image
 
@@ -37,9 +40,12 @@ def dayof(request):
     if request.method == 'POST':
         form = ImageForm(request.POST,request.FILES)
         if form.is_valid():
-            image = Image()
-            image.picture = form.cleaned_data["picture"]
-            image.save()
+            #image = Image()
+            files = request.FILES.getlist('picture')
+
+
+            #image.picture = form.cleaned_data["picture"]
+            #image.save()
             creds = None
             SCOPES = ['https://www.googleapis.com/auth/drive']
             if os.path.exists('token.pickle'):
@@ -55,10 +61,16 @@ def dayof(request):
                     pickle.dump(creds, token)
             service = build('drive', 'v3', credentials=creds)
             folder_id = '1dOy-chl03stjflrlu4jl6nxyWhvAZNmR'
-            file_metadata = {'name': image.picture.name,'parents': [folder_id]}
-            media = MediaFileUpload(image.picture.path,mimetype='image/jpeg')
-            service.files().create(body=file_metadata,media_body=media,fields='id').execute()
-
+            for f in files:
+                #print(f)
+                #image.pics.append(f)
+                save_path = os.path.join(settings.MEDIA_ROOT, str(f))
+                default_storage.save(str(f), f)
+                file_metadata = {'name': str(f),'parents': [folder_id]}
+                media = MediaFileUpload(save_path,mimetype='image/jpeg')
+                service.files().create(body=file_metadata,media_body=media,fields='id').execute()
+                default_storage.delete(str(f))
+            #image.delete()
 
     else:
         form = ImageForm()
