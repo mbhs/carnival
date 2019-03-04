@@ -38,7 +38,7 @@ def contact(request):
 
 def dayof(request):
     if request.method == 'POST':
-        #form = ImageForm(request.POST,request.FILES)
+        form = ImageForm(request.POST,request.FILES)
         #if form.is_valid():
         #image = Image()
         files = request.FILES.getlist('picture')
@@ -73,4 +73,4 @@ def dayof(request):
     else:
         form = ImageForm()
 
-    return render(request, "core/dayof.html", {'navbar': ''})
+    return render(request, "core/dayof.html", {'form': form, 'navbar': ''})
