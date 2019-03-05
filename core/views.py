@@ -37,6 +37,7 @@ def contact(request):
 
 
 def dayof(request):
+    success=False
     if request.method == 'POST':
         form = ImageForm(request.POST,request.FILES)
         #if form.is_valid():
@@ -69,8 +70,9 @@ def dayof(request):
             service.files().create(body=file_metadata,media_body=media,fields='id').execute()
             default_storage.delete(str(f))
         #image.delete()
+        success=True
 
     else:
         form = ImageForm()
 
-    return render(request, "core/dayof.html", {'form': form, 'navbar': ''})
+    return render(request, "core/dayof.html", {'form': form, 'navbar': '', 'success': success})
