@@ -916,6 +916,7 @@ position: absolute;
     color: white;
     font-size: 2em;
     font-family: 'Luckiest Guy', sans-serif; }
+
   #about-page .bbop-card, #dayof .card {
     background-color: #1e88e5; }
     #about-page .bbop-card .card-text {
@@ -990,6 +991,9 @@ position: absolute;
 #dayof {
   padding-top: 3em;
 }
-
+#dayof .dayof-cards-title {
+    color: white;
+    font-size: 4em;
+    font-family: 'Luckiest Guy', sans-serif; }
 
 /*# sourceMappingURL=custom.css.map */
