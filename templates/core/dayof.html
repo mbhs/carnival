@@ -13,6 +13,7 @@
                         <h1 class="card-title">Submit Photos</h1>
                     </div>
                     <div class="card-body">
+                        <p>Click "Upload Pictures," select as many pictures as you want, then click "Submit."</p>
                         <form enctype="multipart/form-data" action="{% url 'dayof' %}" method="post">
                             {% csrf_token %}
                             {{ form|crispy }}

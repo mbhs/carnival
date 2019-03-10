@@ -75,4 +75,4 @@ def dayof(request):
     else:
         form = ImageForm()
 
-    return render(request, "core/dayof.html", {'form': form, 'navbar': '', 'success': success})
+    return render(request, "core/dayof.html", {'form': form, 'navbar': '', 'success': success, 'nobanner': True})
